@@ -1,0 +1,2497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Satya Sai Balvikas Center, Kondayyavalasa</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+.topic-box {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    overflow: hidden;
+  }
+  .topic-header {
+    background: #00577f;
+    color: white;
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .scroll-box ul {
+    overflow-y: auto;
+    margin: 0;
+    padding: 15px 20px;
+    list-style-type: none;
+  }
+  .scroll-box ul::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scroll-box ul::-webkit-scrollbar-thumb {
+    background-color: #0077b6;
+    border-radius: 4px;
+  }
+  .topic-btn {
+    display: block;
+    background: #f1f9ff;
+    border: 1px solid #cce5ff;
+    border-left: 4px solid #0077b6;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+    color: #00577f;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .topic-btn:hover {
+    background: #d7efff;
+    text-decoration: none;
+  }        /* General Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #e0f2f7 0%, #c2eaf0 100%);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        /* Responsive Container */
+        .container {
+            width: 90%;
+            max-width: 950px;
+            margin: 20px auto;
+            padding: 35px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Header Styling */
+        header {
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        header h1 {
+            color: #28a745;
+            margin-bottom: 8px;
+            font-size: 2.8em;
+            letter-spacing: 1.5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.08);
+            font-weight: 700;
+        }
+
+        header h2 {
+            color: #555;
+            font-size: 1.4em;
+            margin-top: 0;
+            font-weight: 400;
+        }
+
+        /* Emoji Styling */
+        .homepage-emoji {
+            font-size: 6em;
+            margin: 30px auto;
+            display: block;
+        }
+
+        /* Welcome Text Styling */
+        .welcome-text {
+            font-size: 1.25em;
+            line-height: 1.8;
+            margin-bottom: 45px;
+            color: #444;
+        }
+
+        /* Button Styling */
+        .main-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 35px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.15em;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .main-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        .main-button i, .main-button span {
+            margin-right: 8px;
+        }
+
+        .folder-buttons-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            margin-top: 45px;
+            width: 100%;
+        }
+
+        .folder-button {
+            padding: 30px;
+            background-color: #20c997;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.3em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(32, 201, 151, 0.3);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .folder-button:hover {
+            background-color: #1abc9c;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(32, 201, 151, 0.4);
+        }
+
+        .folder-button span.emoji {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        /* Hidden Content Sections */
+        .content-section {
+            display: none;
+            margin-top: 35px;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 35px;
+            width: 100%;
+            animation: slideInFromTop 0.6s ease-out;
+        }
+
+        @keyframes slideInFromTop {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .content-section h3 {
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .content-section p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* List Styling for Materials */
+        .materials-list-section {
+            width: 100%;
+            margin-top: 25px;
+        }
+        .materials-list {
+            list-style-type: none;
+            padding: 0;
+            animation: fadeIn 0.8s ease-out;
+            width: 100%;
+        }
+
+        .materials-list li {
+            margin-bottom: 15px;
+            font-size: 1.15em;
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .materials-list li:hover {
+            transform: translateX(5px);
+            background-color: #e9f2f7;
+        }
+
+        .materials-list li::before {
+            content: '📚';
+            margin-right: 12px;
+            font-size: 1.3em;
+            opacity: 0.8;
+        }
+
+        .materials-list a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .materials-list a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        
+        /* Materials Button */
+        .materials-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 25px;
+            background-color: #17a2b8;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.05em;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(23, 162, 184, 0.3);
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .materials-button:hover {
+            background-color: #138496;
+            transform: translateY(-2px) scale(1.01);
+            box-shadow: 0 6px 12px rgba(23, 162, 184, 0.4);
+        }
+        
+        .materials-content {
+            display: none;
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            width: 100%;
+        }
+
+        /* Timetable and Syllabus Table Styling */
+        .timetable-table-container, .syllabus-table-container, .guru-timetable-table-container {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
+            animation: fadeIn 0.6s ease-out;
+            width: 100%;
+            overflow-x: auto;
+        }
+        .timetable-table-container h4, .syllabus-table-container h4, .guru-timetable-table-container h4 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .timetable-table, .syllabus-table, .guru-timetable-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .timetable-table th, .timetable-table td, 
+        .syllabus-table th, .syllabus-table td,
+        .guru-timetable-table th, .guru-timetable-table td {
+            border: 1px solid #add8e6;
+            padding: 12px;
+            text-align: left;
+        }
+        .timetable-table th, .syllabus-table th, .guru-timetable-table th {
+            background-color: #cceeff;
+            color: #333;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+        .timetable-table tbody tr:nth-child(even), 
+        .syllabus-table tbody tr:nth-child(even),
+        .guru-timetable-table tbody tr:nth-child(even) {
+            background-color: #e0f2ff;
+        }
+        .timetable-table tbody tr:hover, 
+        .syllabus-table tbody tr:hover,
+        .guru-timetable-table tbody tr:hover {
+            background-color: #a7d9f7;
+        }
+
+        /* Guru Selection Dropdown */
+        .guru-dropdown-container {
+            margin-top: 25px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .guru-dropdown-container label {
+            font-size: 1.15em;
+            margin-bottom: 12px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .guru-dropdown-container select {
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid #b0c4de;
+            font-size: 1.05em;
+            width: 85%;
+            max-width: 350px;
+            margin-bottom: 25px;
+            background-color: white;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007bff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13.2-5.4H18.4c-6.5%200-12.3%203.3-15.8%208.7-3.6%205.4-3.5%2012.3.3%2017.7l132.8%20140.7c3.6%203.5%208.5%205.4%2013.2%205.4s9.6-1.9%2013.2-5.4l132.8-140.7c3.8-5.4%203.9-12.3.3-17.7z%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 1.1em;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            cursor: pointer;
+        }
+
+        .guru-action-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .guru-action-buttons button {
+            padding: 12px 22px;
+            background-color: #6f42c1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(111, 66, 193, 0.25);
+            font-size: 1em;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .guru-action-buttons button:hover {
+            background-color: #5d35a5;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(111, 66, 193, 0.4);
+        }
+
+        .guru-action-buttons button span.emoji {
+            margin-right: 8px;
+        }
+
+        /* Admin/Portal Login Button */
+        .portal-login-button {
+            position: fixed;
+            top: 25px;
+            right: 25px;
+            padding: 12px 20px;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .portal-login-button:hover {
+            background-color: #5a6268;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Dropdown for Admin Portals */
+        .portal-dropdown-content {
+            display: none;
+            position: fixed;
+            top: 70px;
+            right: 25px;
+            background-color: #fefefe;
+            min-width: 220px;
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.15);
+            z-index: 999;
+            border-radius: 8px;
+            overflow: hidden;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .portal-dropdown-content a, .portal-dropdown-content .sub-portal-option {
+            color: #333;
+            padding: 14px 18px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .portal-dropdown-content a span.emoji, .portal-dropdown-content .sub-portal-option span.emoji {
+            margin-right: 10px;
+            font-size: 1.1em;
+        }
+
+        .portal-dropdown-content a:hover, .portal-dropdown-content .sub-portal-option:hover {
+            background-color: #e9f2f7;
+            color: #007bff;
+        }
+        
+        .portal-dropdown-content .sub-portal-menu {
+            display: none;
+            padding-left: 20px;
+            background-color: #f5f5f5;
+            border-top: 1px solid #eee;
+        }
+
+        /* Guru Message Options */
+        .message-options, .syllabus-completion-options {
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .message-options button,
+        .message-options select,
+        .syllabus-completion-options button {
+            background-color: #ffc107;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(255, 193, 7, 0.2);
+            font-weight: 600;
+            margin: 8px;
+        }
+        .syllabus-completion-options button {
+             background-color: #17a2b8;
+             box-shadow: 0 2px 8px rgba(23, 162, 184, 0.2);
+        }
+
+        .message-options button:hover,
+        .message-options select:hover {
+            background-color: #e0a800;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+        }
+        .syllabus-completion-options button:hover {
+            background-color: #138496;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(23, 162, 184, 0.3);
+        }
+
+        .message-options select {
+            width: auto;
+            padding-right: 35px;
+        }
+
+        .message-options .sub-options,
+        .syllabus-completion-options .sub-options {
+            margin-top: 15px;
+            display: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 15px auto;
+                padding: 25px;
+            }
+
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            header h2 {
+                font-size: 1.2em;
+            }
+
+            .main-button {
+                padding: 12px 25px;
+                font-size: 1.05em;
+            }
+
+            .folder-button {
+                font-size: 1.15em;
+                padding: 25px;
+            }
+
+            .folder-button span.emoji {
+                font-size: 1.5em;
+            }
+
+            .portal-login-button {
+                top: 18px;
+                right: 18px;
+                padding: 10px 18px;
+                font-size: 0.9em;
+            }
+
+            .portal-dropdown-content {
+                top: 60px;
+                right: 18px;
+                min-width: 200px;
+            }
+            .portal-dropdown-content .sub-portal-menu {
+                padding-left: 15px;
+            }
+
+            .guru-action-buttons button {
+                padding: 10px 18px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+                margin: 10px auto;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header h2 {
+                font-size: 1em;
+            }
+
+            .homepage-emoji {
+                font-size: 4em;
+                margin: 20px auto;
+            }
+
+            .welcome-text {
+                font-size: 1em;
+                margin-bottom: 35px;
+            }
+
+            .main-button {
+                width: 90%;
+                font-size: 0.95em;
+                padding: 10px 20px;
+            }
+
+            .folder-buttons-container {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .folder-button {
+                font-size: 1em;
+                padding: 20px;
+            }
+
+            .folder-button span.emoji {
+                font-size: 1.4em;
+            }
+
+            .portal-login-button {
+                top: 10px;
+                right: 10px;
+                padding: 8px 15px;
+                font-size: 0.85em;
+            }
+
+            .portal-dropdown-content {
+                top: 50px;
+                right: 10px;
+                min-width: 180px;
+            }
+            .portal-dropdown-content .sub-portal-menu {
+                padding-left: 10px;
+            }
+
+            .guru-dropdown-container select {
+                width: 95%;
+            }
+
+            .guru-action-buttons {
+                gap: 10px;
+            }
+
+            .guru-action-buttons button {
+                padding: 8px 15px;
+                font-size: 0.85em;
+            }
+
+            .message-options button,
+            .message-options select,
+            .syllabus-completion-options button {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="portal-login-button" id="portalLoginBtn">Admin/Portal Login 🔑</button>
+    <div class="portal-dropdown-content" id="portalDropdown">
+        <div class="sub-portal-option" onclick="toggleSubMenu('inchargePortalMenu', this)"><span class="emoji">🧑‍🏫</span> Incharge Portal</div>
+        <div class="sub-portal-menu" id="inchargePortalMenu">
+            <a href="#" onclick="openPortal('group1InchargePortal')">Group-1 Incharge</a>
+            <a href="#" onclick="openPortal('group2InchargePortal')">Group-2 Incharge</a>
+        </div>
+        
+        <div class="sub-portal-option" onclick="toggleSubMenu('classTeacherPortalMenu', this)"><span class="emoji">🍎</span> Class Teacher Portal</div>
+        <div class="sub-portal-menu" id="classTeacherPortalMenu">
+            <a href="#" onclick="openPortal('kidsBatchClassTeacherPortal')">Kids Batch Class Teacher</a>
+            <a href="#" onclick="openPortal('group1ClassTeacherPortal')">Group-1 Class Teacher</a>
+            <a href="#" onclick="openPortal('group2AClassTeacherPortal')">Group-2(A) Class Teacher</a>
+            <a href="#" onclick="openPortal('group2BClassTeacherPortal')">Group-2(B) Class Teacher</a>
+        </div>
+
+        <div class="sub-portal-option" onclick="toggleSubMenu('coordinatorPortalMenu', this)"><span class="emoji">🤝</span> Coordinator Portal</div>
+        <div class="sub-portal-menu" id="coordinatorPortalMenu">
+            <a href="#" onclick="openPortal('Media coordinator Portal')">Media Coordinator</a>
+            <a href="#" onclick="openPortal('Register coordinator Portal')">Register Coordinator</a>
+            <a href="#" onclick="openPortal('Mentoring coordinator Portal')">Mentoring Coordinator</a>
+            <a href="#" onclick="openPortal('Gurus coordinator Portal')">Gurus Coordinator</a>
+            <a href="#" onclick="openPortal('Group-1 coordinator Portal')">Group-1 Coordinator</a>
+            <a href="#" onclick="openPortal('Cultural coordinator Portal')">Cultural Coordinator</a>
+            <a href="#" onclick="openPortal('Group-2 coordinator Portal')">Group-2 Coordinator</a>
+        </div>
+    </div>
+
+    <div class="container" id="homePage">
+    <header>
+        <h1>Om Sri Sairam ✨</h1>
+        <h2>Sri Satya Sai Balvikas Center, Kondayyavalasa</h2>
+    </header>
+
+    <!-- Namaste Image with fallback emoji -->
+    <div class="homepage-emoji">
+       <img src="https://lh3.googleusercontent.com/proxy/Q3evqqyITVVr4KEXMZ_e2-TJP7dEEYXmO41zQ7UaJ9M3B7oLeeOjsu3hCqDPC_dsCAWWYVEEKtdvT8TVyg" alt="Namaste"
+     onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '🙏')"
+     style="width: 100%; max-width: 300px; height: auto; display: block; margin: 0 auto;" />
+    </div>
+
+    <p class="welcome-text">
+        This is the website where all the <strong>gurus</strong> of Kondayyavalasa can view the 
+        <strong>schedules</strong>, <strong>resources</strong>, and <strong>student data</strong> here. 🙏
+    </p>
+
+    <button class="main-button" id="viewSchedulesBtn">
+        <span class="emoji">👉</span> Click to View Schedules & Resources!
+    </button>
+</div>
+    <div class="container" id="mainDashboard" style="display: none;">
+        <header>
+            <h1 id="userNameDisplay">SAIRAM, [Your Name]! 🙏</h1>
+            <p style="font-style: italic; color: #777;">Welcome to your Balvikas Dashboard! 🌟</p>
+        </header>
+        <div class="folder-buttons-container">
+            <button class="folder-button" onclick="showSection('kidsBatch')"><span class="emoji">🧒</span> Kids Batch</button>
+            <button class="folder-button" onclick="showSection('group1')"><span class="emoji">👧</span> Group-1</button>
+            <button class="folder-button" onclick="showSection('group2A')"><span class="emoji">🧑</span> Group-2(A) Section</button>
+            <button class="folder-button" onclick="showSection('group2B')"><span class="emoji">🧑‍🎓</span> Group-2(B) Section</button>
+            <button class="folder-button" onclick="showSection('gurusPortal')"><span class="emoji">🧑‍🏫</span> Gurus Portal</button>
+        </div>
+    </div>
+
+    <div class="container content-section" id="kidsBatch" style="display: none;">
+        <button class="main-button" onclick="goBackToDashboard()"><span class="emoji">⬅️</span> Back to Dashboard</button>
+        <h3>Kids Batch Details 📚</h3>
+        <p><strong>Incharge:</strong> V. Samitha</p>
+        <p><strong>Class Teacher:</strong> L. Sai Varsha</p>
+        
+        <button class="main-button" style="margin-top:20px;" onclick="toggleTimetable('kidsBatch')"><span class="emoji">⏰</span> View Timetable</button>
+        <div id="kidsBatchTimetable" class="timetable-table-container"></div>
+
+        <button class="main-button" style="margin-top:20px;" onclick="toggleSyllabus('kidsBatch')"><span class="emoji">📖</span> View Syllabus</button>
+        <div id="kidsBatchSyllabus" class="syllabus-table-container"></div>
+
+        <button class="main-button" onclick="toggleReferences('kidsBatchReferences')"><span class="emoji">🔗</span> References</button>
+<div id="kidsBatchReferences" class="materials-content">
+  <h4>Kids Batch References</h4>
+  <ul class="materials-list">
+    <li><button class="main-button" onclick="alertKidsMessage()">Tiny Tunes For Sai</button></li>
+    <li><button class="main-button" onclick="alertKidsMessage()">Divine Alphabets</button></li>
+    <li><button class="main-button" onclick="alertKidsMessage()">Extra Curricular</button></li>
+    <li><button class="main-button" onclick="alertKidsMessage()">Chanting Prayers</button></li>
+    <li><button class="main-button" onclick="alertKidsMessage()">Stories</button></li>
+    <li><button class="main-button" onclick="alertKidsMessage()">God and Goddesses</button></li>
+  </ul>
+</div>
+     
+
+        <button class="materials-button" onclick="toggleMaterials('kidsBatch')"><span class="emoji">💡</span> View Learning Materials</button>
+        <div id="kidsBatchMaterials" class="materials-content">
+            <h4>Kids Batch Learning Materials</h4>
+            <ul class="materials-list">
+                <li><a href="https://drive.google.com/file/d/1UVi5MUcXlsbtucYTq3_At0rPxGp9_rbS/view?usp=drive_link" target="_blank">Chanting Prayers Material for kids</a></li>
+                <li><a href="https://drive.google.com/file/d/1UZqUnM_m_HtZ2D7yRT1Og-N3xKVr5Y0C/view?usp=drive_link" target="_blank">Sai Stories Material for kids</a></li>
+                <li><a href="https://drive.google.com/file/d/1UQvSSIumQTy8GB_V7V8GRMhUL15lnhnh/view?usp=drive_link" target="_blank">Divine Alphabets material for kids</a></li>
+                <li><a href="https://drive.google.com/file/d/1UGqS_FOiahOdcwYVc-XwvQGl66lmqJMN/view?usp=drive_link" target="_blank">Extra Curricular Material for kids</a></li>
+                <li><a href="https://drive.google.com/file/d/1UD7mCXJmYbMTEWErh1a5DyN8KSDnauDZ/view?usp=drive_link" target="_blank">God and goddess material for kids</a></li>
+                <li><a href="https://drive.google.com/file/d/1URFNP5KJCy2wicZ1XMBpX2JPguHEWqBP/view?usp=drive_link" target="_blank">Tiny Tunes For sai material for kids</a></li>
+            </ul>
+        </div>
+        <button class="main-button" onclick="window.open('https://docs.google.com/spreadsheets/d/1zgekHUisHyXg2ytbdnify9wvJBwCmKNZYgiLuTluo58/edit?usp=sharing', '_blank');"><span class="emoji">🧑‍🎓</span> View Students Data</button>
+    </div>
+
+    <div class="container content-section" id="group1" style="display: none;">
+        <button class="main-button" onclick="goBackToDashboard()"><span class="emoji">⬅️</span> Back to Dashboard</button>
+        <h3>Group-1 Details 📚</h3>
+        <p><strong>Incharge:</strong> V.Samitha</p>
+        <p><strong>Class Teacher:</strong> P.Swapna Sai</p>
+        
+        <button class="main-button" style="margin-top:20px;" onclick="toggleTimetable('group1')"><span class="emoji">⏰</span> View Timetable</button>
+        <div id="group1Timetable" class="timetable-table-container"></div>
+
+        <button class="main-button" style="margin-top:20px;" onclick="toggleSyllabus('group1')"><span class="emoji">📖</span> View Syllabus</button>
+        <div id="group1Syllabus" class="syllabus-table-container"></div>
+
+<button class="main-button" style="margin-top:20px;" onclick="toggleReferences('group1References')"><span class="emoji">🔗</span> References</button>
+<div id="group1References" class="container py-3" style="display: none; background: #fff; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="topic-box scroll-box">
+        <div class="topic-header">
+          <i class="fa fa-book-open"></i> Padyasookthulu
+        </div>
+        <ul>
+          <li><a class="topic-btn" href="#">Devudanaga Veru</a></li>
+          <li><a class="topic-btn" href="#">Manujudaina Vadu</a></li>
+          <li><a class="topic-btn" href="#">Manasunandu</a></li>
+          <li><a class="topic-btn" href="#">Matalandu</a></li>
+          <li><a class="topic-btn" href="#">Cheddapani Chesi</a></li>
+          <li><a class="topic-btn" href="#">Cheema Swardambu</a></li>
+          <li><a class="topic-btn" href="#">Kori Korikalanniyu</a></li>
+          <li><a class="topic-btn" href="#">Chepputa Sulambu</a></li>
+          <li><a class="topic-btn" href="#">Datamulaku Madya</a></li>
+          <li><a class="topic-btn" href="#">Peddalanna Mata</a></li>
+          <li><a class="topic-btn" href="#">Kasta Sukamulu</a></li>
+          <li><a class="topic-btn" href="#">Chitta Suddi</a></li>
+          <li><a class="topic-btn" href="#">Allah Yanchu</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+<!-- Shlokas -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-om"></i> Shlokas
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/vakratunda-mahakaaya-sloka/">Vakratunda</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/aumkaaram-bindu-sloka/">Omkaram Bindu</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/gurur-brahmaa-sloka/">Guru Brahma</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/karaagre-vasate-sloka/">Karagre Vasthe</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/harir-daata-sloka/">Harir Dhatha</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/twameva-maataa-sloka/">Twameva</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/asato-maa-sloka/">Asatoma Sadgamaya</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/om-sahanaavavatu-sloka/">Om Sahanavavatu</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/yaa-kundendu-sloka/">Yakundendu</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/kailasaraana-sloka/">Kailasarana</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/namastestu-sloka/">Namastestu</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/om-sarva-mangala-sloka/">Sarva Mangala Mangalye</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/karacharana-sloka/">Karacharana</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/om-sarve-vai-sloka/">Sarvevai</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/shaantaakaaram-sloka/">Shaantakaram</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/poorvam-raama-sloka/">Poorvam Rama</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/manojavam-sloka/">Manojavam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/vedaanuddharate-sloka/">Vedanuddarathe</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/gayatri-mantram-sloka/">Gayatri</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/vande-devam-sloka/">Vande Deva</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/sri-sathya-sai-suprabhatam/">sri satya sai Suprabhatam 1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/ashtothram-1-27-slokas/">Ashtotam 1-27</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/ashtothram-28-54-sloka/">ashtothram-28-54-sloka</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/om-tat-sat-bhajan-2/">om-tat-sat</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/so-hum-mantra/">SOHAM MATRA CHANTING</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Festivals & Others -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-star"></i> Festivals & Others
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/guru-poornima-yr1/">Guru Poornima</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/dasara-yr1/">Dasara</a></li>
+ <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/deepavali-yr1/">Diwali</a></li>
+ <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/khordad-sal-yr1/">khordad-sal</a></li>
+     <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/christmas-yr1/">Christmas</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/ganesh-chaturthi-yr2/">Ganesh Chaturthi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/new-year-celebration-yr2/">New Year</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/eid-ul-fitr-yr2/">Eid</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/birthday-of-the-avatar-yr2/">Swami Birthday</a></li>
+      <li><a class="topic-btn" href="#">bal balikalaku telupavalasina vishayalu 1-40 there in learning materials</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Games -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-star"></i>Group Activities
+    </div>
+    <ul>
+     <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/art-craft-gr1-yr1/">Art & Craft part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/art-craft-grp1-yr2/">Art & Craft part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/art-craft-yr3/">Art & Craft part-3</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/memory-games-yr1/">Memory Games part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/memory-game-gr1-yr2/">Memory Games part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/memory-games-gr1-yr3/">Memory Games part-3</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/matching-game-yr1/">Matching Games part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/matching-game-gr1-yr2/">Matching Games part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/matching-game-gr1-yr3/">Matching Games part-3</a></li>
+
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/circle-games-yr1/">Circle Games</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/action-games-yr1/">Action Games part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/action-circle-games-gr1-yr2/">Action & Circle Games part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/action-circle-games-grp1-yr3/">Action & circle Games part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/mixed-bag-grp1-yr2/">Mixed Bag Medley</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/role-play-gr2-yr2/">Role Play</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/group-activities-quiz-yr3/">Quiz</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/school-games/">School Games</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/attitude-test-yr3/">attitude-test</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+<!-- value songs -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-star"></i>Pranteeya Geetalu /Value Based Songs
+    </div>
+    <ul>
+<li><a class="topic-btn" href="https://drive.google.com/file/d/153zqmCoAaXEnVED81qtuGzJ0sOc8LXMQ/view?usp=drivesdk">Kalisi melasi tirugudaam</a></li>
+      <li><a class="topic-btn" href="https://drive.google.com/file/d/15BOjGPoKlpK3kRRoGWG_SPFYWvOxZFHA/view?usp=drivesdk">prakruthi nundi paatalu</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/5l8WvkCKk6c">vunnadaya devudunnadaya</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/HJY97xp7ghI?si=aZyNv8UcmVChjVuu">okati okati okati manavulantha okati</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/hEFamY-Zg60?si=qMn9bupxJkK6lbfv">tata vanti tata ledu</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/mozNhQRgsg8?si=qjLTkvwoaT5K4KcN">chitti Chitti Papallara</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/4N07ESmf7_E?feature=shared">deshamunu Preminchumanna</a></li>
+       <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/value-song/">VALUE SONG -SATYA IS TRUTH </a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/festival-activity/republic-day/lessons/jai-sairam-jai-sairam/">VALUE SONG -jai sairam,republic day </a></li>
+<li><a class="topic-btn" href="#">kalisi melasi tirugudaam kalisi melasi perugudaam</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- Stories -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-book-reader"></i> Stories
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/period-20-god-is-your-best-friend/">Jatila</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/period-10-parents-are-our-living-god/">Pundareeka</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/te/courses/group-i/om-namo-bhagawate-bhajan-te/lessons/power-of-thought-word-and-deed-dhruva-story-sathya-sai-speaks-fr-te/">Dhruva</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/stories-truth-yr1/">Prahallada</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/period-10-parents-are-our-living-god/">Sravana Kumara</a></li>
+           <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/stories-told-by-jesus/lessons/simplicity/#:~:text=Ishwara%20Chandra%20Vidyasagar%20also%20loved,and%20went%20to%20the%20party.">Eshwar Chandra</a></li>
+     
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/manojavam-sloka/lessons/manojavam-sloka-fr/">Ramabhakta Hanuma</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/period-11-mother-is-your-first-guru/">Amma Mata</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-iii/bhagawad-gita-ananyaas-chinta/lessons/an-incident-in-the-life-of-swami-vivekananda/">Vivekananda</a></li>
+   <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/life-of-young-sai/">Swami Balyam</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/stories-ramayana-yr-iii/">Swami Balyam</a></li>
+   
+    </ul>
+  </div>
+</div>
+
+<!-- Extra Curriculum -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-brain"></i> Extra Curriculum
+    </div>
+    <ul>
+      
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/life-of-young-sai/">Swami Balyam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/main-religions-yr3/">Religions (Hindu / Christian / Islam / Sikh / Baud / Jain / Jorast)</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/misc-3-ds-yr-iii/">3Ds</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/educare-5-elements-grp1-yr3/">5 Elements</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/ceiling-on-desires-yr3/">Ceiling on Desires</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/national-symbols-grp1-yr3/">National Symbols</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/form-meditation-yr1/">(meditation)Mauna Prakriya</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/unity-of-faiths-yr3/lessons/god-is-one/">divyatwam okkate</a></li>
+           <li><a class="topic-btn" href="https://sssbalvikas.in/parents/">talli, tandri, guru</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/health-hygiene-yr3/">Health And Hygiene (arogyam)</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/unity-of-faiths-yr3/">mata samaykyatha</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/japam-dhyanam-yr2/">Japam And Dyanam</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/guided-visualisation-yr2/">Visualisation</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/quiet-time-yr2/">Quiet Time</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/aum-chanting/">Aum Chanting</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/sai-lens/">SAI LENS</a></li>
+
+
+
+    </ul>
+  </div>
+</div>
+
+
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="topic-box scroll-box">
+        <div class="topic-header">
+          <i class="fa fa-music"></i> Bhajans
+        </div>
+        <ul>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/jaya-guru-bhajan/">Jaya Guru Omkaara</a></li>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/krishnam-vande-bhajan/">Krishnam Vande</a></li>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/radha-radha-bhajan/">Rada Rada</a></li>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/jai-durga-bhajan/">Jai Durga Lakshmi</a></li>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/gopala-gopala-bhajan/">Gopala Gopala</a></li>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/alakh-niranjana-bhajan/">Alakh Niranjana</a></li>
+          <li><a class="topic-btn" href="#">Pranteeya Geetalu</a></li>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/jai-jai-ram-bhajan/">Jai Jai Ram</a></li>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/shaila-girishwara-bhajan/">Saila Gireeshwara</a></li>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/om-namo-bhagawate-bhajan/">Om Namo Bagavathe</a></li>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/maha-ganapate-bhajan/">Maha Ganapathe</a></li>
+          <li><a class="topic-btn" href="#">Hey Shiva Shankara</a></li>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/govinda-hare-bhajan/">Govinda Hare</a></li>
+          <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/shiva-shambho-bhajan/">shiva-shambho</a></li>
+  <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/om-shri-ram-bhajan/">om-shri-ram</a></li>
+  <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/govinda-krishna-vitthale-bhajan/">govinda-krishna-vitthale-bhajan/</a></li>
+<li><a class="topic-btn" href="https://sairhythms.sathyasai.org/song/shivaya-parameshwaraya-chandrashekaraya-namah-om">Shivaya Parameshwar</a></li>
+
+          <li><a class="topic-btn" href="https://www.sssmediacentre.org/listen/67c51abb9e36849c91efe244/">Jai Jai Gananayaka</a></li>
+          <li><a class="topic-btn" href="https://sairhythms.sathyasai.org/song/jai-jai-bhavani-ma-ambe">Jai Jai Bavani Maa</a></li>
+          <li><a class="topic-btn" href="https://youtu.be/ypgcAeaQevY?si=ZBvXrAo-n5omIaDZ">Vitala Bhajo</a></li>
+          <li><a class="topic-btn" href="https://youtu.be/cESLb9NRBT8?si=9R1FCRwqvQP0jCuX">Shuklam Baradara</a></li>
+          <li><a class="topic-btn" href="https://youtu.be/BLgrI0hIRHc?si=GwRsFkBqMmAfQmsh">Keshava Madava</a></li>
+          <li><a class="topic-btn" href="https://www.sssmediacentre.org/listen/64febc1c32d9664ba4a3477e/">Jaganmathe</a></li>
+          <li><a class="topic-btn" href="https://sairhythms.sathyasai.org/song/jai-sai-ram-jai-sai">Jai Sayeram</a></li>
+          <li><a class="topic-btn" href="https://sairhythms.sathyasai.org/song/amba-parameshwari-akhilandeshwari">Amba Parameshwari</a></li>
+          <li><a class="topic-btn" href="https://sairhythms.sathyasai.org/song/madura-puri-nilayey-meenakshi">Madurapuri Nilaye</a></li>
+         
+          <li><a class="topic-btn" href="https://www.sssmediacentre.org/listen/67642e231aa2412549c560f2/">Om Shivaya</a></li>
+          <li><a class="topic-btn" href="https://www.sssmediacentre.org/listen/64ec90a0b04924eb61793b8e/">Bhajamana Govinda</a></li>
+
+
+
+        </ul>
+      </div>
+    </div>
+
+<!-- Vaakya Vibhuthi & Good Manners -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-comment-dots"></i> Vaakya Vibhuthi & Good Manners
+    </div>
+    <ul>
+      
+      <li><a class="topic-btn" href="#">All Vakya Vibhthis explanation Is in In the learning Materials Section,\n If you want Audios Mail To the Admin Mail From Gurus Portal</a></li>
+      <li><a class="topic-btn" href="#">manners topics and good manners, japa and Dyanam</a></li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+</div>
+        <button class="materials-button" onclick="toggleMaterials('group1')"><span class="emoji">💡</span> View Learning Materials</button>
+        <div id="group1Materials" class="materials-content">
+            <h4>Group-1 Learning Materials</h4>
+            <ul class="materials-list">
+                <li><a href="https://drive.google.com/file/d/1Ys0yWAWnE4g6XxRC26UHW3ywcttGpqML/view?usp=drive_link" target="_blank">Extra Curricular Group-1 material</a></li>
+                <li><a href="https://drive.google.com/file/d/1Yc1foCGJjd7uwAj8jEahR5vr0QwDRLYb/view?usp=drive_link" target="_blank">Shlokas & Suprabatham  Group-1 Material</a></li>
+                <li><a href="https://drive.google.com/file/d/1UtuoCg3l7MIJLSHnh6WMPR7xM2LazFNH/view?usp=drive_link" target="_blank">Stories Group-1 Material</a></li>
+<li><a href="https://drive.google.com/file/d/1Y_w9k47fXwwglP71IItiG0f04vO2IkFJ/view?usp=drive_linkk" target="_blank">BHAJANS Group-1 Material</a></li>
+<li><a href="https://drive.google.com/file/d/1Yxj9o42DpEkpSpfVNlxRjMM7X1PYIYsu/view?usp=drive_link" target="_blank">Pranteeya Geethalu Group-1 Material</a></li>
+<li><a href="https://drive.google.com/file/d/1Yv_qxiv-l2laR_Yh_2nRjJ6KUsnix3b3/view?usp=drive_link" target="_blank">Festivals and balabalikalaku teiliyaparachu vishayalu</a></li>
+
+<li><a href="https://drive.google.com/file/d/1UvGO0WJYuZFViYrtN6k_N5GOWHM2-vC4/view?usp=drive_link" target="_blank">Vakya Vibhuthi And manners Group-1 Material</a></li>
+            </ul>
+        </div>
+        <button class="main-button" onclick="window.open('https://docs.google.com/spreadsheets/d/1zgekHUisHyXg2ytbdnify9wvJBwCmKNZYgiLuTluo58/edit?usp=sharing', '_blank');"><span class="emoji">🧑‍🎓</span> View Students Data</button>
+    </div>
+
+    <div class="container content-section" id="group2A" style="display: none;">
+        <button class="main-button" onclick="goBackToDashboard()"><span class="emoji">⬅️</span> Back to Dashboard</button>
+        <h3>Group-2(A) Section Details 📚</h3>
+        <p><strong>Incharge:</strong> Ch.Gowtham</p>
+        <p><strong>Class Teacher:</strong> V.Sravani</p>
+        
+        <button class="main-button" style="margin-top:20px;" onclick="toggleTimetable('group2A')"><span class="emoji">⏰</span> View Timetable</button>
+        <div id="group2ATimetable" class="timetable-table-container"></div>
+
+        <button class="main-button" style="margin-top:20px;" onclick="toggleSyllabus('group2A')"><span class="emoji">📖</span> View Syllabus</button>
+        <div id="group2ASyllabus" class="syllabus-table-container"></div>
+
+<button class="main-button" style="margin-top:20px;" onclick="toggleReferences('group2aReferences')"><span class="emoji">🔗</span> References</button>
+<div id="group2aReferences" class="container py-3" style="display: none; background: #fff; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+  <div class="row">
+<!-- Bhajans -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-music"></i> Bhajans
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/shri-ganesha-bhajan/">Sri Ganesha</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/hara-shiva-shankara-bhajan/">Hari Shiva Shankara</a></li>
+       <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/govindha-rama-bhajan/">govinda rama </li>>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/arathi-bhajan/">mangala Harathi</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/manasa-bhajare/">manasa-bhajare</a></li>
+
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/allah-tumho-bhajan/">Allaha Tumaho</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/jaya-jaya-rama-bhajan/">Jaya Jaya Rama</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/gopala-radhey-krishna-bhajan/">Gopaala Radhe Krishna</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/jai-jai-jai-manamohana-bhajan/">Jai Jai Mana Mohana</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/gangadhara-hara-bhajan/">gangadhara-hara-bhajan</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/sitaram-nam-bhajo-bhajan/">Seetha Ram Nama Bhajo</a></li>
+      <li><a class="topic-btn" href="#">Praanteeya Geethalu</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/hari-hari-hari-hari-bhajan/">Hari Hari Smarana</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/jai-jai-durge-bhajan/">Jai Jai Durge</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/hey-madhava-hey-madhusudana-bhajan/">Hey Madava</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/gurupada-ranjana-ram-bhajan/">Guru Pada Ranjana</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- value songs -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-star"></i>Pranteeya Geetalu /Value Based Songs
+    </div>
+    <ul>
+<li><a class="topic-btn" href="https://drive.google.com/file/d/153zqmCoAaXEnVED81qtuGzJ0sOc8LXMQ/view?usp=drivesdk">Kalisi melasi tirugudaam</a></li>
+      <li><a class="topic-btn" href="https://drive.google.com/file/d/15BOjGPoKlpK3kRRoGWG_SPFYWvOxZFHA/view?usp=drivesdk">prakruthi nundi paatalu</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/5l8WvkCKk6c">vunnadaya devudunnadaya</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/HJY97xp7ghI?si=aZyNv8UcmVChjVuu">okati okati okati manavulantha okati</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/hEFamY-Zg60?si=qMn9bupxJkK6lbfv">tata vanti tata ledu</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/mozNhQRgsg8?si=qjLTkvwoaT5K4KcN">chitti Chitti Papallara</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/4N07ESmf7_E?feature=shared">deshamunu Preminchumanna</a></li>
+       <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/value-song/">VALUE SONG -SATYA IS TRUTH </a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/festival-activity/republic-day/lessons/jai-sairam-jai-sairam/">VALUE SONG -jai sairam,republic day </a></li>
+<li><a class="topic-btn" href="#">kalisi melasi tirugudaam kalisi melasi perugudaam</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Extra Curricular & Baba Sayings -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-lightbulb"></i> Others 
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/importance-of-prayer-omkar/">omkaaram</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/importance-of-prayer-omkar/">Pranayamam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/breathing-technique-yr2/">Yoga</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/jyoti-meditation-gr2-yr1/">Jyothi Dhyana</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/temples-holy-places-in-india/">Temples in India</a></li>
+       <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/lives-of-saints/lessons/purandaradasa/">Purandara Dasu</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/lives-of-saints/lessons/nandanar-adanur/">Nandanar</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/lives-of-saints/lessons/eknath/">Eka Nath</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-iii/indian-culture/lessons/festivals/">Festivals Intro</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/shivaratri/">Shivaratri</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/navaratri/">Navaratri</a></li>
+
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/festival-activity/onam/">Onam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/buddha-poornima/">Budda Poornima</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/guru-nanak-jayanthi/">Guru Nanak</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/mahavir-jayanti/">Mahavir Jayanthi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/krishna-janmastami-yr1/">Janmashtami</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/nag-panchami-festival/">Nagapanchami</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/holi/">Holi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/easter/">Easter</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/ceiling-on-desires-yr3/lessons/cod-an-overview/">Ceiling on Desires (COD)</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/the-major-religions/">Religions-1(main Religions)</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/the-semitic-religions/">Religions-2(Semitic Religions)</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/educare-5-elements-grp1-yr3/">5 Elements</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/5ds/">5 Ds</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/health-hygiene-yr3/">Health & Hygiene</a></li>
+            <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/sri-sathya-sai-suprabhatam/">Suprabhatam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/japam-dhyanam-yr2/">Japa & Dhyana</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/period-24-5-mothers/">5 Mothers</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/national-symbols-grp1-yr3/lessons/national-flag-emblem/">National Symbols</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<!-- Ashtotram & Swami Baalyam -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-gem"></i> Ashtotram & Swami Baalyam
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/ashtothram-1-27-slokas/">Ashtotam 1-27</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/ashtothram-28-54-sloka/">ashtothram-28-54-sloka</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/ashtotaram-55-108-slokas/">Ashtotam 55-108</a></li>
+ <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/life-of-young-sai/">Swami Balyam Part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/life-of-bhagawan-ii/"> Swami Baalyam Part-2</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/hi/courses/group-i/life-of-young-sai-hi/lessons/childhood-stories-iii/"> Swami Baalyam Part-3</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Games-->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-book"></i> Group Activity
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/art-craft-grp2-yr1/">Art & Craft part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/art-craft-grp2-yr2/">Art & Craft part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/art-craft-grp2-yr3/">Art & Craft part-3</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/memory-game-gr-2-yr1/">Memory Games part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/memory-games-grp2-yr2/">Memory Games part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/memory-games-grp2-yr3/">Memory Games part-3</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/circle-game-gr2-yr1/">Circle Games</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/action-game-gr2-yr1/">Action Games part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/action-games-grp-2-yr2/">Action Games part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/action-games-grp3-yr3/">Action Games part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/mixed-bag-gr2-yr1/">Mixed Bag Medley</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/role-play-gr2-yr2/">Role Play</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/quiz-grp2-yr2/">Quiz</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/school-games-2/">School Games</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/bhajan-antakshari-grp2-yr3/">Bhajan Anthakshari</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<!-- Bhagavad Gita -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-book"></i> Bhagavad Gita
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/aham-aatma/">Ahamatma Gudakesha</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/pashya-me-paartha/">Pasyame Pardha</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/aham-vaishvanaro/">Aham Vaishvaanaro</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/yadaa-yadaa/">Yada Yadahi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/purushah-sa-parah/">Purusha Stapara</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/santushtah-satatam/">Santushtam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/man-manaa/">Manmana Madbaktyo</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/parithranaya-sadhunaam/">Paritranaya Saadunam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/brahma-arpanam/">Brahmarpanam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/yat-karoshi/">Yatkaroshi Yadshnashi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/patram-pushpam/">Patram Pushpam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/sarva-dharman/">Sarvadarman</a></li>
+    </ul>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-book"></i> Bhaja Govindam and Prayers
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/bhaja-govindam/">Bhaja Govindam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/nalineedalagatha-jalamatitharalam/">Nalini Dala</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/balastavat-kreeda/">Balastaavat</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/kate-kanta-kaste-putrah/">Kaante Kaanta</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/satsangatwe-nissangattwam/">Satsangatve</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/dinayaaminyow-sayam-pratah/">Dinaminyau</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/yogarato-vaa-bhogarato-vaa/">Yogaratova</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/bhagavadgeeta-kinchidadheeta/">Bhagavad Gita</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/punarapi-jananam-punarapi-maranam/">Punarapi Jananam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/twayi-mayi/">Twayi Mayi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/shatrou-mitre-putre-bandhou/">Shatre</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/geyam-geeta/">Geyam Geetha</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/arthamanartham-bhavaya-nityam/">Ardha Manardam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/pranayaamam-pratyaharam/">Pranayamam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/kamam-krodham-lobham-moham/">Kama Krodham</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/gurucharanambuja/">Guru Charanambuja</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/deepam-jyoti/">Deepam Jyothi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/ishaa-vasyamidam/">Yeesha Vasya Midam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/poornamidam/">Poorna Midam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/food-prayers/">Bojana Prardhana</a></li>
+        </ul>
+  </div>
+</div>
+
+<!-- Padyasookthis -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-scroll"></i> Padyasookthis
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="#">Neti Vidyardulara</a></li>
+      <li><a class="topic-btn" href="#">Paramatma Premanu</a></li>
+      <li><a class="topic-btn" href="#">Yuga Yugantaramula</a></li>
+      <li><a class="topic-btn" href="#">Yetti Karmamu Tana</a></li>
+      <li><a class="topic-btn" href="#">Karma Cheyaga</a></li>
+      <li><a class="topic-btn" href="#">Bratikinanninallu</a></li>
+      <li><a class="topic-btn" href="#">Nammakamu Rendu</a></li>
+      <li><a class="topic-btn" href="#">Kagitambu</a></li>
+      <li><a class="topic-btn" href="#">Satya Dharma Ahimsa</a></li>
+      <li><a class="topic-btn" href="#">Adunika Vidya Prigenu</a></li>
+      <li><a class="topic-btn" href="#">Sastrambu</a></li>
+      <li><a class="topic-btn" href="#">Manasunnaku</a></li>
+      <li><a class="topic-btn" href="#">Inupa Patraayina</a></li>
+      <li><a class="topic-btn" href="#">Kalu Jarina</a></li>
+      <li><a class="topic-btn" href="#">Gunamu Konchem</a></li>
+      <li><a class="topic-btn" href="#">Jati Gauravambu</a></li>
+      <li><a class="topic-btn" href="#">Jaati Bedamu</a></li>
+      <li><a class="topic-btn" href="#">Satyadarma Shati</a></li>
+    </ul>
+  </div>
+</div>
+<!-- extra curricular -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-quote-left"></i> Extra Curricular And baba sayings
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="#">All Extra Curricular with stories and explanation Given in the Learning Materials section</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/lives-of-great-men/">Freedom Fighters</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/babas-saying-grp2-yr1/">baba sayings in material(1-16)</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/babas-saying-grp2-yr2/">baba sayings in material(17-32)</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/babas-saying-gr2-yr3/">baba sayings in material(33-56)</a></li>
+
+          </ul>
+  </div>
+</div>
+</div>
+</div>
+        <button class="materials-button" onclick="toggleMaterials('group2A')"><span class="emoji">💡</span> View Learning Materials</button>
+        <div id="group2AMaterials" class="materials-content">
+            <h4>Group-2(A) Learning Materials</h4>
+            <ul class="materials-list">
+                <li><a href="https://drive.google.com/file/d/1UhI893_uE0QjVVcyrcjBPIRFtR-I2szq/view?usp=drive_link" target="_blank">Bhajans Group-2(A) material</a></li>
+                <li><a href="https://drive.google.com/file/d/1UhKey_eTJh9yhCiQvPV82RxEq8Q8V3lZ/view?usp=drive_link" target="_blank">Extra Curricular Group-2(A) material</a></li>
+<li><a href="https://drive.google.com/file/d/1Uia4X_PDkCSFqSQ3TTqeMPnQXyNENl9r/view?usp=drive_link" target="_blank">Bhaja Govindam & Prayers Material Group-2(A)</a></li>
+<li><a href="https://drive.google.com/file/d/1UiIzfZI8rv_Q8-gWdyGUaKUBTMHuMSue/view?usp=drive_link" target="_blank">Others material Group-2(A)</a></li>
+<li><a href="https://drive.google.com/file/d/1dU1W1JdY6cCHFIE8rbqYGFvmlP45aLS1/view?usp=sharing" target="_blank">Baba Sayings Group-2(A) Material</a></li>
+            </ul>
+        </div>
+        <button class="main-button" onclick="window.open('https://docs.google.com/spreadsheets/d/1zgekHUisHyXg2ytbdnify9wvJBwCmKNZYgiLuTluo58/edit?usp=sharing', '_blank');"><span class="emoji">🧑‍🎓</span> View Students Data</button>
+    </div>
+
+    <div class="container content-section" id="group2B" style="display: none;">
+        <button class="main-button" onclick="goBackToDashboard()"><span class="emoji">⬅️</span> Back to Dashboard</button>
+        <h3>Group-2(B) Section Details 📚</h3>
+        <p><strong>Incharge:</strong> Ch.Gowtham</p>
+        <p><strong>Class Teacher:</strong> D.Vinay Karthik & K.Susanth</p>
+        
+        <button class="main-button" style="margin-top:20px;" onclick="toggleTimetable('group2B')"><span class="emoji">⏰</span> View Timetable</button>
+        <div id="group2BTimetable" class="timetable-table-container"></div>
+
+        <button class="main-button" style="margin-top:20px;" onclick="toggleSyllabus('group2B')"><span class="emoji">📖</span> View Syllabus</button>
+        <div id="group2BSyllabus" class="syllabus-table-container"></div>
+
+<button class="main-button" style="margin-top:20px;" onclick="toggleReferences('group2bReferences')"><span class="emoji">🔗</span> References</button>
+<div id="group2bReferences" class="container py-3" style="display: none; background: #fff; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+  <div class="row">
+<!-- Bhajans -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-music"></i> Bhajans
+    </div>
+    <ul>
+       <li><a class="topic-btn" href="https://www.sssmediacentre.org/listen/67c51abb9e36849c91efe244/">Jai Jai Gananayaka</a></li>
+          <li><a class="topic-btn" href="https://sairhythms.sathyasai.org/song/jai-jai-bhavani-ma-ambe">Jai Jai Bavani Maa</a></li>
+          <li><a class="topic-btn" href="https://youtu.be/ypgcAeaQevY?si=ZBvXrAo-n5omIaDZ">Vitala Bhajo</a></li>
+          <li><a class="topic-btn" href="https://youtu.be/cESLb9NRBT8?si=9R1FCRwqvQP0jCuX">Shuklam Baradara</a></li>
+          <li><a class="topic-btn" href="https://youtu.be/BLgrI0hIRHc?si=GwRsFkBqMmAfQmsh">Keshava Madava</a></li>
+          <li><a class="topic-btn" href="https://www.sssmediacentre.org/listen/64febc1c32d9664ba4a3477e/">Jaganmathe</a></li>
+          <li><a class="topic-btn" href="https://sairhythms.sathyasai.org/song/jai-sai-ram-jai-sai">Jai Sayeram</a></li>
+          <li><a class="topic-btn" href="https://sairhythms.sathyasai.org/song/amba-parameshwari-akhilandeshwari">Amba Parameshwari</a></li>
+          <li><a class="topic-btn" href="https://sairhythms.sathyasai.org/song/madura-puri-nilayey-meenakshi">Madurapuri Nilaye</a></li>
+         
+          <li><a class="topic-btn" href="https://www.sssmediacentre.org/listen/67642e231aa2412549c560f2/">Om Shivaya</a></li>
+          <li><a class="topic-btn" href="https://www.sssmediacentre.org/listen/64ec90a0b04924eb61793b8e/">Bhajamana Govinda</a></li>
+      <li><a class="topic-btn" href="https://sairhythms.sathyasai.org/song/shivaya-parameshwaraya-chandrashekaraya-namah-om">Shivaya Parameshwar</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/shri-ganesha-bhajan/">Sri Ganesha</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/hara-shiva-shankara-bhajan/">Hari Shiva Shankara</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/govindha-rama-bhajan/">govinda rama </li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/arathi-bhajan/">mangala Harathi</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/manasa-bhajare/">manasa-bhajare</a></li>
+
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/allah-tumho-bhajan/">Allaha Tumaho</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/jaya-jaya-rama-bhajan/">Jaya Jaya Rama</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/gopala-radhey-krishna-bhajan/">Gopaala Radhe Krishna</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/jai-jai-jai-manamohana-bhajan/">Jai Jai Mana Mohana</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/gangadhara-hara-bhajan/">gangadhara-hara-bhajan</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/sitaram-nam-bhajo-bhajan/">Seetha Ram Nama Bhajo</a></li>
+      <li><a class="topic-btn" href="#">Praanteeya Geethalu</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/hari-hari-hari-hari-bhajan/">Hari Hari Smarana</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/jai-jai-durge-bhajan/">Jai Jai Durge</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/hey-madhava-hey-madhusudana-bhajan/">Hey Madava</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/gurupada-ranjana-ram-bhajan/">Guru Pada Ranjana</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- value songs -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-star"></i>Pranteeya Geetalu /Value Based Songs
+    </div>
+    <ul>
+<li><a class="topic-btn" href="https://drive.google.com/file/d/153zqmCoAaXEnVED81qtuGzJ0sOc8LXMQ/view?usp=drivesdk">Kalisi melasi tirugudaam</a></li>
+      <li><a class="topic-btn" href="https://drive.google.com/file/d/15BOjGPoKlpK3kRRoGWG_SPFYWvOxZFHA/view?usp=drivesdk">prakruthi nundi paatalu</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/5l8WvkCKk6c">vunnadaya devudunnadaya</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/HJY97xp7ghI?si=aZyNv8UcmVChjVuu">okati okati okati manavulantha okati</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/hEFamY-Zg60?si=qMn9bupxJkK6lbfv">tata vanti tata ledu</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/mozNhQRgsg8?si=qjLTkvwoaT5K4KcN">chitti Chitti Papallara</a></li>
+      <li><a class="topic-btn" href="https://youtu.be/4N07ESmf7_E?feature=shared">deshamunu Preminchumanna</a></li>
+       <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/value-song/">VALUE SONG -SATYA IS TRUTH </a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/festival-activity/republic-day/lessons/jai-sairam-jai-sairam/">VALUE SONG -jai sairam,republic day </a></li>
+<li><a class="topic-btn" href="#">kalisi melasi tirugudaam kalisi melasi perugudaam</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Extra Curricular & Baba Sayings -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-lightbulb"></i> Extra Curricular & Baba Sayings
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/importance-of-prayer-omkar/">omkaaram</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/importance-of-prayer-omkar/">Pranayamam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/breathing-technique-yr2/">Yoga</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/jyoti-meditation-gr2-yr1/">Jyothi Dhyana</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/temples-holy-places-in-india/">Temples in India</a></li>
+       <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/lives-of-saints/lessons/purandaradasa/">Purandara Dasu</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/lives-of-saints/lessons/nandanar-adanur/">Nandanar</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/lives-of-saints/lessons/eknath/">Eka Nath</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-iii/indian-culture/lessons/festivals/">Festivals Intro</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/shivaratri/">Shivaratri</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/navaratri/">Navaratri</a></li>
+
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/festival-activity/onam/">Onam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/buddha-poornima/">Budda Poornima</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/guru-nanak-jayanthi/">Guru Nanak</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/mahavir-jayanti/">Mahavir Jayanthi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/krishna-janmastami-yr1/">Janmashtami</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/nag-panchami-festival/">Nagapanchami</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/holi/">Holi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/easter/">Easter</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/ceiling-on-desires-yr3/lessons/cod-an-overview/">Ceiling on Desires (COD)</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/the-major-religions/">Religions-1(main Religions)</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/the-semitic-religions/">Religions-2(Semitic Religions)</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/educare-5-elements-grp1-yr3/">5 Elements</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/5ds/">5 Ds</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/health-hygiene-yr3/">Health & Hygiene</a></li>
+            <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/sri-sathya-sai-suprabhatam/">Suprabhatam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/japam-dhyanam-yr2/">Japa & Dhyana</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/period-24-5-mothers/">5 Mothers</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/national-symbols-grp1-yr3/lessons/national-flag-emblem/">National Symbols</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/lives-of-great-men/">Freedom Fighters</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/babas-saying-grp2-yr1/">baba sayings in material(1-16)</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/babas-saying-grp2-yr2/">baba sayings in material(17-32)</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/babas-saying-gr2-yr3/">baba sayings in material(33-56)</a></li>
+
+    </ul>
+  </div>
+</div>
+
+<!-- Ashtotram & Swami Baalyam -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-gem"></i> Ashtotram & Swami Baalyam
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/ashtothram-1-27-slokas/">Ashtotam 1-27</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/ashtothram-28-54-sloka/">ashtothram-28-54-sloka</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/ashtotaram-55-108-slokas/">Ashtotam 55-108</a></li>
+ <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-i/life-of-young-sai/">Swami Balyam Part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/life-of-bhagawan-ii/"> Swami Baalyam Part-2</a></li>
+<li><a class="topic-btn" href="https://sssbalvikas.in/hi/courses/group-i/life-of-young-sai-hi/lessons/childhood-stories-iii/"> Swami Baalyam Part-3</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Games-->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-book"></i> Group Activity
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/art-craft-grp2-yr1/">Art & Craft part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/art-craft-grp2-yr2/">Art & Craft part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/art-craft-grp2-yr3/">Art & Craft part-3</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/memory-game-gr-2-yr1/">Memory Games part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/memory-games-grp2-yr2/">Memory Games part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/memory-games-grp2-yr3/">Memory Games part-3</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/circle-game-gr2-yr1/">Circle Games</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/action-game-gr2-yr1/">Action Games part-1</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/action-games-grp-2-yr2/">Action Games part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/action-games-grp3-yr3/">Action Games part-2</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/mixed-bag-gr2-yr1/">Mixed Bag Medley</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/role-play-gr2-yr2/">Role Play</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/quiz-grp2-yr2/">Quiz</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/school-games-2/">School Games</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/bhajan-antakshari-grp2-yr3/">Bhajan Anthakshari</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<!-- Bhagavad Gita -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-book"></i> Bhagavad Gita
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/aham-aatma/">Ahamatma Gudakesha</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/pashya-me-paartha/">Pasyame Pardha</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/aham-vaishvanaro/">Aham Vaishvaanaro</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/yadaa-yadaa/">Yada Yadahi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/purushah-sa-parah/">Purusha Stapara</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/santushtah-satatam/">Santushtam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/man-manaa/">Manmana Madbaktyo</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/parithranaya-sadhunaam/">Paritranaya Saadunam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/brahma-arpanam/">Brahmarpanam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/yat-karoshi/">Yatkaroshi Yadshnashi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/patram-pushpam/">Patram Pushpam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/sarva-dharman/">Sarvadarman</a></li>
+    </ul>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-book"></i> Bhaja Govindam and Prayers
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/bhaja-govindam/">Bhaja Govindam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/nalineedalagatha-jalamatitharalam/">Nalini Dala</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/balastavat-kreeda/">Balastaavat</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/kate-kanta-kaste-putrah/">Kaante Kaanta</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/satsangatwe-nissangattwam/">Satsangatve</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/dinayaaminyow-sayam-pratah/">Dinaminyau</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/yogarato-vaa-bhogarato-vaa/">Yogaratova</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/bhagavadgeeta-kinchidadheeta/">Bhagavad Gita</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/punarapi-jananam-punarapi-maranam/">Punarapi Jananam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/twayi-mayi/">Twayi Mayi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/shatrou-mitre-putre-bandhou/">Shatre</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/geyam-geeta/">Geyam Geetha</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/arthamanartham-bhavaya-nityam/">Ardha Manardam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/pranayaamam-pratyaharam/">Pranayamam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/kamam-krodham-lobham-moham/">Kama Krodham</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/gurucharanambuja/">Guru Charanambuja</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/deepam-jyoti/">Deepam Jyothi</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/ishaa-vasyamidam/">Yeesha Vasya Midam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/poornamidam/">Poorna Midam</a></li>
+      <li><a class="topic-btn" href="https://sssbalvikas.in/courses/group-ii/food-prayers/">Bojana Prardhana</a></li>
+        </ul>
+  </div>
+</div>
+
+<!-- Padyasookthis -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-scroll"></i> Padyasookthis
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="#">Neti Vidyardulara</a></li>
+      <li><a class="topic-btn" href="#">Paramatma Premanu</a></li>
+      <li><a class="topic-btn" href="#">Yuga Yugantaramula</a></li>
+      <li><a class="topic-btn" href="#">Yetti Karmamu Tana</a></li>
+      <li><a class="topic-btn" href="#">Karma Cheyaga</a></li>
+      <li><a class="topic-btn" href="#">Bratikinanninallu</a></li>
+      <li><a class="topic-btn" href="#">Nammakamu Rendu</a></li>
+      <li><a class="topic-btn" href="#">Kagitambu</a></li>
+      <li><a class="topic-btn" href="#">Satya Dharma Ahimsa</a></li>
+      <li><a class="topic-btn" href="#">Adunika Vidya Prigenu</a></li>
+      <li><a class="topic-btn" href="#">Sastrambu</a></li>
+      <li><a class="topic-btn" href="#">Manasunnaku</a></li>
+      <li><a class="topic-btn" href="#">Inupa Patraayina</a></li>
+      <li><a class="topic-btn" href="#">Kalu Jarina</a></li>
+      <li><a class="topic-btn" href="#">Gunamu Konchem</a></li>
+      <li><a class="topic-btn" href="#">Jati Gauravambu</a></li>
+      <li><a class="topic-btn" href="#">Jaati Bedamu</a></li>
+      <li><a class="topic-btn" href="#">Satyadarma Shati</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Vaakya Vibhuthi -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+  <div class="topic-box scroll-box">
+    <div class="topic-header">
+      <i class="fa fa-quote-left"></i> Vakyavibhthis
+    </div>
+    <ul>
+      <li><a class="topic-btn" href="#">All vakyavibhthis with stories and explanation Given in the Learning Materials section</a></li>
+          </ul>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+        <button class="materials-button" onclick="toggleMaterials('group2B')"><span class="emoji">💡</span> View Learning Materials</button>
+        <div id="group2BMaterials" class="materials-content">
+            <h4>Group-2(B) Learning Materials</h4>
+            <ul class="materials-list">
+                <li><a href="https://drive.google.com/file/d/1UiIzfZI8rv_Q8-gWdyGUaKUBTMHuMSue/view?usp=drive_link" target="_blank">Extra curricular & Baba Sayings material Group-2(B)</a></li>
+                <li><a href="https://drive.google.com/file/d/1Umc9D1MO6118SF0hyuMGDNc2Xilt1_7I/view?usp=drive_link" target="_blank">Bhajans material Group-2(B)</a></li>
+                 <li><a href="https://drive.google.com/file/d/1UjZqSX2aMLO4vMEXLFVo8tVg5QV3eyoO/view?usp=drive_link" target="_blank">vakya vibhuthi material Group-2(B)</a></li>
+                  <li><a href="https://drive.google.com/file/d/1Uia4X_PDkCSFqSQ3TTqeMPnQXyNENl9r/view?usp=drive_link" target="_blank">Bhaja Govindam & Prayers Material Group-2(B)</a></li>
+                 <li><a href="https://drive.google.com/file/d/1UrXBczCfHal_y4hd6SkdehD2kaiWbi7f/view?usp=drive_link" target="_blank">Sri satya sai Ashtotra material Group-2(B)</a></li>
+                  <li><a href="https://drive.google.com/file/d/1UrwZe1EUPu8Vco7HASuME07p0Rr9E7e1/view?usp=drive_link" target="_blank">Swami Balyam full explanation materail Group-2(B)</a></li>
+                  <li><a href="https://drive.google.com/file/d/1Uq2qHzH9Re7WIGqEyhLNrcX_7CFs9Wyc/view?usp=drive_link" target="_blank">Swami Balyam full gunshot pointsGroup-2(B)</a></li>
+
+            </ul>
+        </div>
+        <button class="main-button" onclick="window.open('https://docs.google.com/spreadsheets/d/1zgekHUisHyXg2ytbdnify9wvJBwCmKNZYgiLuTluo58/edit?usp=sharing', '_blank');"><span class="emoji">🧑‍🎓</span> View Students Data</button>
+    </div>
+
+    <div class="container content-section" id="gurusPortal" style="display: none;">
+        <button class="main-button" onclick="goBackToDashboard()"><span class="emoji">⬅️</span> Back to Dashboard</button>
+        <h3>Gurus Portal 🧑‍🏫</h3>
+        <div class="guru-dropdown-container">
+            <label for="guruSelect">Select a Guru: 👇</label>
+            <select id="guruSelect" onchange="resetGuruDetails()">
+                <option value="">-- Select Guru --</option>
+                <option value="Ch.Gowtham">Ch.Gowtham</option>
+                <option value="D.Vinay Karthik">D.Vinay Karthik</option>
+                <option value="K.Shushanth">K.Shushanth</option>
+                <option value="L.Sai Varsha">L.Sai Varsha</option>
+                <option value="P.Swapna">P.Swapna</option>
+                <option value="V.Samitha">V.Samitha</option>
+                <option value="V.Sravani">V.Sravani</option>
+            </select>
+        </div>
+        <div class="guru-action-buttons">
+            <button onclick="displayGuruData('biodata')"><span class="emoji">📄</span> Gurus Bio Data</button>
+            <button onclick="displayGuruData('schedule')"><span class="emoji">🗓️</span> Individual Schedule</button>
+            <button onclick="displayGuruData('responsibilities')"><span class="emoji">📝</span> Responsibilities</button>
+            <button onclick="displayGuruData('materials')"><span class="emoji">💡</span> Materials Needed</button>
+            <button onclick="toggleMessageOptions()"><span class="emoji">📧</span> Message Admin</button>
+            
+            <button onclick="toggleSyllabusCompletionOptions()"><span class="emoji">✅</span> Syllabus Completion</button>
+        </div>
+
+        <div id="guruDetailsDisplay" style="margin-top: 25px; width: 100%; text-align: left;">
+            <p style="text-align: center; color: #888;">Select a Guru and an action above to see details. ✨</p>
+        </div>
+
+        <div class="message-options" id="messageOptions" style="display: none;">
+            <h4>Send Message To:</h4>
+            <button onclick="openMailLink('admin')"><span class="emoji">👑</span> Admin</button>
+            <button onclick="toggleSubOptions('inchargeOptions')"><span class="emoji">👨‍ overseeing</span> Group Incharge</button>
+            <button onclick="toggleSubOptions('classTeacherOptions')"><span class="emoji">👩‍🏫</span> Class Teacher</button>
+            <button onclick="toggleSubOptions('coordinatorMessageOptions')"><span class="emoji">🤝</span> Coordinator</button>
+
+            <div class="sub-options" id="inchargeOptions" style="display: none;">
+                <button onclick="openMailLink('group1Incharge')">Group-1 Incharge</button>
+                <button onclick="openMailLink('group2Incharge')">Group-2 Incharge</button>
+            </div>
+
+            <div class="sub-options" id="classTeacherOptions" style="display: none;">
+                <button onclick="openMailLink('group1ClassTeacher')">Group-1 Class Teacher</button>
+                <button onclick="openMailLink('kidsBatchClassTeacher')">Kids Batch Class Teacher</button>
+                <button onclick="openMailLink('group2AClassTeacher')">Group-2(A) Class Teacher</button>
+                <button onclick="openMailLink('group2BClassTeacher')">Group-2(B) Class Teacher</button>
+            </div>
+
+            <div class="sub-options" id="coordinatorMessageOptions" style="display: none;">
+                <button onclick="openMailLink('Media Coordinator')">Media Coordinator</button>
+                <button onclick="openMailLink('Register Coordinator')">Register Coordinator</button>
+                <button onclick="openMailLink('Mentoring Coordinator')">Mentoring Coordinator</button>
+                <button onclick="openMailLink('Gurus Coordinator')">Gurus Coordinator</button>
+                <button onclick="openMailLink('Group-1 Coordinator')">Group-1 Coordinator</button>
+                <button onclick="openMailLink('Cultural Coordinator')">Cultural Coordinator</button>
+                <button onclick="openMailLink('Group-2 Coordinator')">Group-2 Coordinator</button>
+            </div>
+        </div>
+
+        <div class="syllabus-completion-options" id="syllabusCompletionOptions" style="display: none;">
+            <h4>Select Batch for Syllabus Completion:</h4>
+            <div class="sub-options" id="syllabusBatchOptions">
+                <button onclick="openSyllabusCompletion('kidsBatch')">Kids Batch</button>
+                <button onclick="openSyllabusCompletion('group1')">Group-1</button>
+                <button onclick="openSyllabusCompletion('group2A')">Group-2(A)</button>
+                <button onclick="openSyllabusCompletion('group2B')">Group-2(B)</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let userName = ''; // To store the user's name
+
+        // --- Guru Passwords ---
+        const guruPasswords = {
+            "Ch.Gowtham": "1",
+            "D.Vinay Karthik": "19112007",
+            "K.Shushanth": "25022009",
+            "L.Sai Varsha": "11122005",
+            "P.Swapna": "03082004",
+            "V.Samitha": "22082005",
+            "V.Sravani": "16022007"  
+        };
+
+        // --- Admin Portal Passwords ---
+        const portalPasswords = {
+            'group1InchargePortal': 'g1i',
+            'group2InchargePortal': 'g2i',
+            'kidsBatchClassTeacherPortal': 'kbct',
+            'group1ClassTeacherPortal': 'g1ct',
+            'group2AClassTeacherPortal': 'g2act',
+            'group2BClassTeacherPortal': 'g2bct',
+            'Media coordinator Portal': 'MCP@coor1',
+            'Register coordinator Portal': 'RCP@coor2',
+            'Mentoring coordinator Portal': 'MENCP@coor2',
+            'Gurus coordinator Portal': 'GCP@coor4',
+            'Group-1 coordinator Portal': 'grp1@coor5',
+            'Cultural coordinator Portal': 'culp@coor6',
+            'Group-2 coordinator Portal': 'c7'
+        };
+
+        // --- Portal Links ---
+        const portalLinks = {
+            'group1InchargePortal': 'YOUR_GROUP1_INCHARGE_EXCEL_LINK',
+            'group2InchargePortal': 'YOUR_GROUP2_INCHARGE_EXCEL_LINK',
+            'kidsBatchClassTeacherPortal': 'https://docs.google.com/spreadsheets/d/194vmw2AIerpypELnNT21RsXAIaXCxKuWyihomW_K_J4/edit?usp=sharing',
+            'group1ClassTeacherPortal': 'https://docs.google.com/spreadsheets/d/1WoyY_xqnyQQA7bSeUAwZ456bLKbUUaLa9j7phZw-5cI/edit?usp=sharing',
+            'group2AClassTeacherPortal': 'https://docs.google.com/spreadsheets/d/1TkOuYbfVAPByM96gTKEWhIVVtNqMbiTOfyI4Jj2fv6A/edit?usp=sharing',
+            'group2BClassTeacherPortal': 'https://docs.google.com/spreadsheets/d/1dIQYZpmZ_BK2OkeTnB0Gxu_sw9tDYHsQFqQx9A2yiqM/edit?usp=sharing',
+            'Media coordinator Portal': 'https://docs.google.com/spreadsheets/d/1RTPRcC9Zl8jJxyQW2noo4EXAKrAeBB-duPyb3pSdPKQ/edit?usp=sharing',
+            'Register coordinator Portal': 'https://docs.google.com/spreadsheets/d/1FLVirVEYAAiUkDeExVjXaQtR56CKrOWKsx6mEYPRIxE/edit?usp=sharing',
+            'Mentoring coordinator Portal': 'https://docs.google.com/spreadsheets/d/1OvOWRYRa71K2i1NT_7_4eNNq24w-n49xlJjc8yLYTlk/edit?usp=sharing',
+            'Gurus coordinator Portal': 'https://docs.google.com/spreadsheets/d/1gvPfcRQC16-Vygadq4ssEsUjrqFqSv4ip5fMmr3OYzY/edit?usp=sharing',
+            'Group-1 coordinator Portal': 'https://docs.google.com/spreadsheets/d/1kEEbRagnxJ0S5NZ0ze3JkpJwDCXO-xSKMCDDvSBxz-A/edit?usp=sharing',
+            'Cultural coordinator Portal': 'https://docs.google.com/spreadsheets/d/1oIs6e2BkMhX1ER7UQEt8x2hKMTGEsJ6ZBrRm6yVJI5E/edit?usp=sharing',
+            'Group-2 coordinator Portal': 'YOUR_COORDINATOR7_EXCEL_LINK'
+        };
+
+        // --- Email Addresses for Message Feature ---
+        const contactEmails = {
+            'admin': 'sssbalvikas.agp@gmail.com',
+            'group1Incharge': 'velaga005@gmail.com',
+            'group2Incharge': 'chithagowtham2@gmail.com',
+            'group1ClassTeacher': 'swapnasaipalaka@gmail.com',
+            'kidsBatchClassTeacher': 'saivarsha068@gmail.com',
+            'group2AClassTeacher': 'sravanivindula716@gmail.com',
+            'group2BClassTeacher': 'gowrishankerdwarapudi@gmail.com',
+            'Media coordinator': 'susanthkinthada1125@gmail.com',
+            'Register coordinator': 'sravanivindula716@gmail.com',
+            'Mentoring coordinator': 'saivarsha068@gmail.com',
+            'Gurus coordinator Portal': 'gowrishankerdwarapudi@gmail.com',
+            'Group-1 coordinator Portal': 'velaga005@gmail.com',
+            'Cultural coordinator Portal': 'swapnasaipalaka@gmail.com',
+            'Group-2 coordinator Portal': 'chithagowtham2@gmail.com'
+        };
+
+        // --- Syllabus Data for Display ---
+        const syllabusData = {
+            group1: {
+                headers: ['Name Of the topic', 'Sub topics'],
+                data: [
+                    ['Padyasoothulu', 'Devudanaga Veru / Manujudaina Vadu / Manasunandu / Matalandu / Cheddapani Chesi / Cheema Swardambu / Kori Korikalanniyu / Chepputa Sulambu / Datamulaku Madya / Peddalanna Mata / Kasta Sukamulu / Chitta Suddi / Allah Yanchu'],
+                    ['Bhajans', 'Jaya Guru Omkaara / Krishnam Vande / Rada Rada / Jai Durga Lakshmi / Gopala Gopala / Alakh Niranjana / Pranteeya Geetalu / Jai Jai Ram / Saila Gireeshwara / Om Namo Bagavathe / Maha Ganapathe / Hey Shiva Shankara / Govinda Hare / Shivaya Parameshwar / Jai Jai Gananayaka / Jai Jai Bavani Maa / Vitala Bhajo / Shuklam Baradara / Keshava Madava / Jaganmathe / Jai Sayeram / Amba Parameshwari / Madurapuri Nilaye / Durga Lakshmi / Om Shivaya / Bhajamana Govinda'],
+                    ['vaakya vibhuthi And good manners', 'annam nimittam / athi bhasha / arogyaaniki dehasuddi / yedchevadu narudu / kopamu papaniki / garvam teeyani / gadachina nimisham / dayagala hrudayame / danagunam lenivadu / naluka pai bhagavannamamu / noru manchidaithe / manners topics and good manners,japa and Dyanam'],
+                    ['Shlokas', 'Vakratunda / Omkaram Bindu / Guru Brahma / Karagre Vasthe / Harir Dhatha / Twameva / Asatoma Sadgamaya / Om Sahanavavatu / Yakundendu / Kailasarana / Namastestu / Sarva Mangala Mangalye / Karacharana / Sarvevai / Shaantakaram / Poorvam Rama / Manojavam / Vedanuddarathe / Gayatri / Sayi Gayatri / Vande Deva / Suprabhatam 1 / Suprabhatam 2 / Suprabhatam 3 / Suprabhatam 4'],
+                    ['festivals & Others', 'Guru Poornima / Diwali / Christmas / Ganesh Chaturthi / New Year / Eid / Swami Birthday/bal balikalaku telupavalasina vishayalu 1-40'],
+                    ['stories', 'Jatila / Pundareeka / Dhruva / Prahallada / Sravana Kumara / Matru Devo Bhava / Eshwar Chandra / Manchini Panchuko / Atallo Abaddam / Moorkulatho / Ramabhakta Hanuma / Amma Mata / Vivekananda / Dokka Settamma'],
+                    ['Extra Curriculum:', 'Satya Bodha / Swami Balyam / Religions(hindu christ,islam,sikh baud,jain,jorast) / 3Ds / 5 Elements / Ceiling on Desires / National Symbols / Mauna Prakriya / daiva vishvasam / divyatwam okkate / guruvu / talli,tandri,guru / prardana / nama smaranan / satsangam / niyama palana / chema adarsham / mrudu madura / prakruti patashala / yevari panulu / arogyam / mata samaykyatha']
+                ]
+            },
+            kidsBatch: {
+                headers: ['Name Of the Subject','Topics to be teached'],
+                data: [
+                    ['Tiny Tunes For Sai', 'sai ram sai ram / swamis love / sing sing / baba baba / sai baba sai baba / clap clap / sathya sai baba / if you love baba / you came from / oh god / see no evil / always welcome / he made air / he made animals / gods love'],
+                    ['chanting prayers', 'sairam / ganesh / durgey / shiridi vasiney / gurave / vasudevaya / shiva / matru,pitru devo / athiti ,acharya / sai gayatri / vibhuti manta / vakratunda / guru brahma / om shanthi hi / saraswathi / harirdatha / karagre / samudra vasane / sarva mangala / namastestu / manojavam'],
+                    ['Stories', 'All Stories from chinna Katha book'],
+                    ['Divine alphabets', 'Spiritual Names for A-Z Alphabests abd their importance'],
+                    ['extra Curiccular', '3 lords / 3 goddesses / 3 famous rivers / guru / 5 elements / one / three / four / five / six / seven / eight / nine / ten / one two rhyme / ABC / DEF / GHI / JKLM / NOP / QR / ST / UVW / XYZ / TEACHINGS / RELIGIOUS / FESTIVALS & VAHAN / Rainbow, magic words / watch, best'],
+                    ['God and Goddesses', 'aum, ganesha / brahma, vishnu / shiva, dattatreya / karthikeya, indra / surya, varuna / agni, navagraha / rama, krishna / hanuman, yama / messiah, jesus / zohrashtra, budda / mahaveer, guru nanakh / shiridi sai, satya sai / gayatri, durga / lakshmi, saraswathi / shailaputri, brahmacharini / chandraganta, koshmanda / skandamata, katyayani / kalahatri, mahagauri / siddidhatri, sita / radha, mother mary / dashavatar / kaliyuga avatar / eshwaramma / pedavenkamma']
+                ]
+            },
+            group2A: {
+                headers: ['Name of the subject', 'Topic to be covered'],
+                data: [
+                    ['Bhajans', 'Sri Ganesha / Hari Shiva Shankara / Govinda Rama / Allaha Tumaho / Harathi / Pranteeya Geethalu / Jaya Jaya Rama / Gopaala Radhe Krishna / Jai Jai Mana Mohana / Seetha Ram Nama Bhajo / Praanteeya Geethalu / Hari Hari Smarana / Jai Jai Durge / Hey Madava / Guru Pada Ranjana / Pranteeya Geethalu'],
+                    ['Extra Curricular and Baba Sayings', 'Importance of all Freedom Fighters Alluri Seetharamaraju / Sarojini Naidu / T. Prakasham / Durga Bai / Duggirala Gopal Krishna'],
+                    ['bagavadgitha', 'Ahamatma Gudakesha / Pasyame Pardha / Aham Vaishvaanaro / Yada Yadahi / Purusha Stapara / Santushtam / Manmana Madbaktyo / Paritranaya Saadunam / Brahmarpanam / Yatkaroshi Yadshnashi / Patram Pushpam / Sarvadarman/all 1-56 Baba Sayings'],
+ ['Others', 'OMKAARAM / PRANAYAMA / YOGA / JYOTHI DYANANA / TEMPLES-1 / TEMPLES-2 / PURANDARA DASU / NANDANARU / YEKA NATH / FESTIVALS INTRO / SHIVARATRI / ONAM / BUDDA POORNIMA / GURU NANAKH / MAHAVIR JAYANTHI / JANMASTAMI / NAGAPANCHAMI / HOLI / EASTER / COD / RELIGIONS-1 / RELIGIONS-2 / 5 ELEMENTS / 5 DS / HEALTH & HYGIENE / EDUCARE-1 / EDUCARE-2 / HINDU POOJA / SUPRABAATAM / JAPA, DYANA / 5 MOTHERS / NAVARATRI / NATIONAL SYMBOLS'],
+
+                    ['Padyasookthis', 'Neti Vidyardulara / Paramatma Premanu / Yuga Yugantaramula / Yetti Karmamu Tana / Karma Cheyaga / Bratikinanninallu / Nammakamu Rendu / Kagitambu / Satya Dharma Ahimsa / Adunika Vidya Prigenu / Sastrambu / Manasunnaku / Inupa Patraayina / Kalu Jarina / Gunamu Konchem / Jati Gauravambu / Jaati Bedamu / Satyadarma Shati'],
+
+                    ['Bhaja govindam & Prayers', ' Baja Govindam / Nalini Dala / Balastaavat / Kaante Kaanta / Satsangatve / Dinaminyau / Yogaratova / bagavdgitha/Punarapi /twayi mayi/shatre/ Geyam Geetha / Ardha Manardam/pranayamam/kama krodam/gurucharanambuja (prayers syllabus is Deepam Jyothi / Yeesha Vasya Midam / Poorna Midam / Prabatha Prardhana / Bojana Prardhana / Sukha Sayana / Itara Mata))']
+                ]
+            },
+            group2B: {
+                headers: ['Name of the subject', 'Topics to be covered'],
+                data: [
+                    ['Bhajans', 'Jai Jai Gananayaka / Jai Jai Bhavani Maa / Jaya Guru Jaya Guru / Vitala Bhajo / Shuklam Baradara / Keshava Madava / Jaganmathe / Jai Sayeram / Amba Parameshwari / Jaya Guru Omkaara / Madurapuri Nilaye / Durga Lakshmi / Om Shivaya / Bhajamana Govinda / Shivaya Parameshwar / Sri Ganesha / Hari Shiva Shankara / Govinda Rama / Allaha Tumaho / Harathi / Pranteeya Geethalu / Jaya Jaya Rama / Gopaala Radhe Krishna / Jai Jai Mana Mohana / Seetha Ram Nama Bhajo / Praanteeya Geethalu / Hari Hari Smarana / Jai Jai Durge / Hey Madava / Guru Pada Ranjana'],
+                    ['Extra Curricular & Baba Sayings', 'mkaaram / Pranayamam / Yoga / Jyothi Dhyana / Temples-1 / Temples-2 / Purandara Dasu / Nandanar / Eka Nath / Festivals Intro / Shivaratri / Onam / Budda Poornima / Guru Nanak / Mahavir Jayanthi / Janmashtami / Nagapanchami / Holi / Easter / Ceiling on Desires (COD) / Religions-1 / Religions-2 / 5 Elements / 5 Ds / Health & Hygiene / Educare-1 / Educare-2 / Hindu Pooja / Suprabhatam / Japa & Dhyana / 5 Mothers / Navaratri / National Symbols / Freedom Fighters','baba sayings in material(1-56)'],
+                    ['Ashtotam And swami baalyam', '1-108 ashtotra with meaning and stories and entire swami baalyam'],
+                    ['vakyavibhthis', 'all vakyavibhthis with stories and explanation annamu / analu kanna / annamu nimmittam / itharulu / karige vayasu / kalamu vyardamu / krutagnyatha / tapassunu / jeevulanu badinchi / drusti ettido / daivamu pai bakti / nalukanu vashamu / pashcyatapame / bagavantuni yandu / bagavantudu sootradari / yekkada bagavannamamu / rati yandu / roshame doshamulanu / vadana sadanaku / vidya yokka lakshanam / sheelamu leni manishi / hridayam / mananam / kshama satyam'],
+                    ['bagavadgitha', 'Ahamatma Gudakesha / Pasyame Pardha / Aham Vaishvaanaro / Yada Yadahi / Purusha Stapara / Santushtam / Manmana Madbaktyo / Paritranaya Saadunam / Brahmarpanam / Yatkaroshi Yadshnashi / Patram Pushpam / Sarvadarman'],
+ ['Padyasookthis', 'Neti Vidyardulara / Paramatma Premanu / Yuga Yugantaramula / Yetti Karmamu Tana / Karma Cheyaga / Bratikinanninallu / Nammakamu Rendu / Kagitambu / Satya Dharma Ahimsa / Adunika Vidya Prigenu / Sastrambu / Manasunnaku / Inupa Patraayina / Kalu Jarina / Gunamu Konchem / Jati Gauravambu / Jaati Bedamu / Satyadarma Shati'],
+
+
+
+                    ['bhajagovindam &prayers', ' Baja Govindam / Nalini Dala / Balastaavat / Kaante Kaanta / Satsangatve / Dinaminyau / Yogaratova / bagavdgitha/Punarapi /twayi mayi/shatre/ Geyam Geetha / Ardha Manardam/pranayamam/kama krodam/gurucharanambuja (prayers syllabus is Deepam Jyothi / Yeesha Vasya Midam / Poorna Midam / Prabatha Prardhana / Bojana Prardhana / Sukha Sayana / Itara Mata))']
+                ]
+            }
+        };
+
+        // --- Timetable Data for Display ---
+        const timetableData = {
+            kidsBatch: {
+                headers: ['Time', 'Activity', 'Guru'],
+                data: [
+                    ['9:00-9:20', 'Tiny Tunes For Sai', 'L.Sai Varsha'],
+                    ['9:20-9:40', 'The Divine Alphabets', 'V.Samitha'],
+                    ['9:40-10:00', 'Sai Stories', 'K.Shushanth'],
+                    ['10:00-10:20', 'Chanting Prayers', 'V.Sravani'],
+                    ['10:20-10:40', 'God & Goddessses', 'D.Vinay Karthik'],
+                    ['10:40-11:00', 'Extra curricular&Group Activity', 'P.Swapna']
+                ]
+            },
+            group1: {
+                headers: ['Time', 'Subject', 'Guru'],
+                data: [
+                    ['9:00-9:20', 'Bhajans', 'P.Swapna'],
+                    ['9:20-9:40', 'Vaakya Vibhti & Good manners', 'L.Sai Varsha'],
+                    ['9:40-10:00', 'Padya Sookthi\'s', 'Ch.Gowtham'],
+                    ['10:00-10:20', 'Stories', 'D.vinay Karthik'],
+                    ['10:20-10:40', 'Prayers&Festivals', 'V.Samitha'],
+                    ['10:40-11:00', 'Extra curricular&Group Activity', 'Shushanth & samitha']
+                ]
+            },
+            group2B: {
+                headers: ['Time', 'Subject', 'Guru'],
+                data: [
+                    ['9:00-9:20', 'Bhajans', 'D.Vinay Karthik'],
+                    ['9:20-9:40', 'Ashtotam & Swami Baalyam', 'K.Shushanth'],
+                    ['9:40-10:00', 'Extra curricular & Baba sayings', 'V.Samitha'],
+                    ['10:00-10:20', 'Bhagavadgeetha & Padya sookthis', 'Ch.Gowtham'],
+                    ['10:20-10:40', 'Prayers & Bhaja Govindam', 'P.Swapna'],
+                    ['10:40-11:00', 'Vaakya vibhuthi &Group Activity', 'V.Sravani']
+                ]
+            },
+            group2A: {
+                headers: ['Time', 'Subject', 'Guru'],
+                data: [
+                    ['9:00-9:20', 'Bhagavadgitha & Padyasookthis', 'Ch.Gowtham'],
+                    ['9:20-9:40', 'Others', 'Ch.Gowtham'],
+                    ['9:40-10:00', 'Bhajans', 'V.Sravani'],
+                    ['10:00-10:20', 'Extra Curricular & Baba Sayings', 'P.Swapna'],
+                    ['10:20-10:40', 'Bhaja Govindam & Prayers', 'Ch.Gowtham'],
+                    ['10:40-11:00', 'Group Activity', 'L.Sai Varsha']
+                ]
+            }
+        };
+
+        // --- Individual Guru Timetable Data ---
+        const guruTimetableData = {
+            "Ch.Gowtham": {
+                headers: ['Time', 'Batch/Activity','Topic'],
+                data: [
+                    ['9:00-9:20 AM', 'Group-2(A) Section', 'Bhagavadgeetha & Padya sookthis'],
+                    ['9:20-9:40 AM', 'Group-2(A) Section', 'others'],
+                    ['9:40-10:00 AM', 'Group-1', 'Padya Sookthis'],
+                    ['10:00-10:20 AM', 'Group-2(B) Section', 'bagavadgetha & poems'],
+                    ['10:20-10:40 AM', 'Group-2(A) Section', 'Bhaja Govindam & Prayers'],
+                    ['10:40-11:00 AM', 'Rounds', '5th period Round Incharge']
+                ]
+            },
+            "D.Vinay Karthik": {
+                headers: ['Time', 'Batch/Activity','Topic'],
+                data: [
+                    ['9:00-9:20 AM', 'Group-2(B) Section', 'Bhajans'],
+                    ['9:20-9:40 AM', 'Rounds', '2nd period Round Incharge'],
+                    ['9:40-10:00 AM', 'Class Teacher Work', 'work mentioned in time table'],
+                    ['10:00-10:20 AM', 'Group-1', 'Stories'],
+                    ['10:20-10:40 AM', 'Kids Batch', 'God & Goddesses'],
+                    ['10:40-11:00 AM', 'Coordinator Work', 'work mentioned in time table']
+                ]
+            },
+            "K.Shushanth": {
+                headers: ['Time', 'Batch/Activity','Topic'],
+                data: [
+                    ['9:00-9:20 AM', 'Coordinator Work', 'work mentioned in time table'],
+                    ['9:20-9:40 AM', 'Group-2(B) Section', 'Ashtotam And Swami balyam'],
+                    ['9:40-10:00 AM', 'Kids Batch', 'Sai Stories'],
+                    ['10:00-10:20 AM', 'Coordinator Work','Writing New Joining Reports & Media Work', 'work mentioned in time table'],
+                    ['10:20-10:40 AM','Coordinator Work', 'Writing New Joining Reports & Media Work', 'work mentioned in time table'],
+                    ['10:40-11:00 AM', 'Group-1', 'Extra Curricular & Group Activity']
+                ]
+            },
+            "L.Sai Varsha": {
+                headers: ['Time', 'Batch/Activity','Topic'],
+                data: [
+                    ['9:00-9:20 AM', 'Kids Batch', 'Tiny Tunes For Sai'],
+                    ['9:20-9:40 AM', 'Group-1', 'Vaakya Vibhti & Good manners'],
+                    ['9:40-10:00 AM', 'Coordinator Work', 'work mentioned in time table'],
+                    ['10:00-10:20 AM', 'Rounds', '4th period Round Incharge'],
+                    ['10:20-10:40 AM', 'Class Teacher Work', 'work mentioned in time table'],
+                    ['10:40-11:00 AM', 'Group-2(A) Section', 'Group Activity']
+                ]
+            },
+            "P.Swapna": {
+                headers: ['Time', 'Batch/Activity','Topic'],
+                data: [
+                    ['9:00-9:20 AM', 'Group-1', 'Bhajans'],
+                    ['9:20-9:40 AM', 'Class Teacher Work', 'work mentiones in time table'],
+                    ['9:40-10:00 AM', 'Rounds', '3rd period Round Incharge'],
+                    ['10:00-10:20 AM', 'Group-2(A) Section', 'Extra Curricular & Baba Sayings'],
+                    ['10:20-10:40 AM', 'Group-2(B) Section', 'Prayers & Bhaja Govindam'],
+                    ['10:40-11:00 AM', 'Kids Batch', 'Extra Curricular & Group Activity']
+                ]
+            },
+            "V.Samitha": {
+                headers: ['Time', 'Batch/Activity','Topic'],
+                data: [
+                    ['9:00-9:20 AM', 'Rounds', '1st period Round Incharge'],
+                    ['9:20-9:40 AM', 'Kids Batch', 'The Divine Alphabets'],
+                    ['9:40-10:00 AM', 'Group-2(B) Section', 'Extra Curricular & Baba Sayings'],
+                    ['10:00-10:20 AM', 'Coordinator Work', 'work mentioned in time table'],
+                    ['10:20-10:40 AM', 'Group-1', 'Prayers & Festivals'],
+                    ['10:40-11:00 AM', 'Group-1', 'Extra Curricular & Group Activity']
+                ]
+            },
+            "V.Sravani": {
+                headers: ['Time', 'Batch/Activity','Topic'],
+                data: [
+                    ['9:00-9:20 AM', 'Coordinator Work', 'work mentioned in time table'],
+                    ['9:20-9:40 AM', 'Class Teacher Work', 'work mentioned in time table'],
+                    ['9:40-10:00 AM', 'Group-2(A) Section', 'Bhajans'],
+                    ['10:00-10:20 AM', 'Kids Batch', 'Chanting Prayers'],
+                    ['10:20-10:40 AM', 'Rounds', '4th Period round incharge'],
+                    ['10:40-11:00 AM', 'Group-2(B) Section', 'Vaakya vibhuthi & Group Activity']
+                ]
+            }
+        };
+
+        // --- Syllabus Completion Excel/Google Sheet Links ---
+        const syllabusCompletionLinks = {
+            'kidsBatch': 'https://docs.google.com/spreadsheets/d/1C_IcZJt2_SCeCt5eFteVIXNKN2UumYKoAYiI_RY5_VQ/edit?usp=sharing',
+            'group1': 'https://docs.google.com/spreadsheets/d/1xqlFqgJiLVhu5eN9NQzX41mR2OwuyL9ec2hqKw3gDwI/edit?usp=sharing',
+            'group2A': 'https://docs.google.com/spreadsheets/d/1rjxDt0q6CFxvg0oUPw-dLUiWnkrwtaU7QJk35kavL1U/edit?usp=sharing',          
+            'group2B': 'https://docs.google.com/spreadsheets/d/1lMMn0EFmI5gSeOzcIoL64y6mB1zMbWD4eC2By4jUkfk/edit?usp=sharing'
+        };
+
+        // --- Functions for Page Navigation and Visibility ---
+        function showSection(sectionId) {
+            // Hide all main content sections
+            document.querySelectorAll('.container').forEach(container => {
+                container.style.display = 'none';
+            });
+            document.querySelectorAll('.container.content-section').forEach(container => {
+                container.style.display = 'none';
+            });
+
+            // Display the selected section
+            document.getElementById(sectionId).style.display = 'flex';
+            document.getElementById('portalDropdown').style.display = 'none';
+            
+            // Reset guru portal specific displays if moving away from it
+            if (sectionId !== 'gurusPortal') {
+                document.getElementById('guruSelect').value = '';
+                resetGuruDetails();
+                document.getElementById('messageOptions').style.display = 'none';
+                document.getElementById('inchargeOptions').style.display = 'none';
+                document.getElementById('classTeacherOptions').style.display = 'none';
+                document.getElementById('coordinatorMessageOptions').style.display = 'none';
+                document.getElementById('syllabusCompletionOptions').style.display = 'none';
+                document.getElementById('syllabusBatchOptions').style.display = 'none';
+            }
+            
+            // Hide all timetable, syllabus, and materials content when changing sections
+            document.querySelectorAll('.timetable-table-container, .syllabus-table-container, .materials-content, .guru-timetable-table-container').forEach(tableContainer => {
+                tableContainer.style.display = 'none';
+            });
+        }
+
+        
+
+        function goBackToDashboard() {
+            // Hide all specific content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            // Show the main dashboard
+            document.getElementById('mainDashboard').style.display = 'flex';
+
+            // Reset guru portal specifics
+            document.getElementById('guruSelect').value = '';
+            resetGuruDetails();
+            document.getElementById('messageOptions').style.display = 'none';
+            document.getElementById('inchargeOptions').style.display = 'none';
+            document.getElementById('classTeacherOptions').style.display = 'none';
+            document.getElementById('coordinatorMessageOptions').style.display = 'none';
+            document.getElementById('syllabusCompletionOptions').style.display = 'none';
+            document.getElementById('syllabusBatchOptions').style.display = 'none';
+
+            // Hide all timetable, syllabus, and materials content when going back to dashboard
+            document.querySelectorAll('.timetable-table-container, .syllabus-table-container, .materials-content, .guru-timetable-table-container').forEach(tableContainer => {
+                tableContainer.style.display = 'none';
+            });
+        }
+        
+        // --- Portal Login Dropdown Logic ---
+        document.getElementById('portalLoginBtn').addEventListener('click', function() {
+            const dropdown = document.getElementById('portalDropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Close the dropdown if the user clicks outside of it
+        window.addEventListener('click', function(event) {
+            if (!event.target.matches('#portalLoginBtn') && !event.target.closest('.portal-dropdown-content')) {
+                const dropdowns = document.getElementsByClassName("portal-dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === 'block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
+        });
+
+        // Toggle sub-menus in the Admin Portal
+        function toggleSubMenu(menuId, clickedElement) {
+            const subMenu = document.getElementById(menuId);
+            const isCurrentlyOpen = subMenu.style.display === 'block';
+
+            // Close all other sub-menus first
+            document.querySelectorAll('.sub-portal-menu').forEach(menu => {
+                menu.style.display = 'none';
+            });
+
+            // Open or close the clicked sub-menu
+            subMenu.style.display = isCurrentlyOpen ? 'none' : 'block';
+        }
+
+        // Open specific portal with password check
+        const masterAdminPassword = "sadmingow";
+
+// Open specific portal with password check (supports master password)
+function openPortal(portalKey) {
+    const password = prompt(`Enter password for ${portalKey.replace(/([A-Z])/g, ' $1').trim().replace('Portal', ' Portal')}:`);
+
+    // Check if password matches either the portal's or the admin's
+    if (password === portalPasswords[portalKey] || password === masterAdminPassword) {
+        const link = portalLinks[portalKey];
+        if (link && link !== `YOUR_${portalKey.toUpperCase()}_EXCEL_LINK`) {
+            window.open(link, '_blank');
+        } else {
+            alert('Portal link not set. Please inform the administrator.');
+        }
+    } else {
+        alert('Incorrect password.');
+    }
+}
+
+        // --- Guru Portal Specific Logic ---
+        function resetGuruDetails() {
+            document.getElementById('guruDetailsDisplay').innerHTML = '<p style="text-align: center; color: #888;">Select a Guru and an action above to see details. ✨</p>';
+            // Hide message and syllabus completion options when guru selection changes
+            document.getElementById('messageOptions').style.display = 'none';
+            document.getElementById('inchargeOptions').style.display = 'none';
+            document.getElementById('classTeacherOptions').style.display = 'none';
+            document.getElementById('coordinatorMessageOptions').style.display = 'none';
+            document.getElementById('syllabusCompletionOptions').style.display = 'none';
+            document.getElementById('syllabusBatchOptions').style.display = 'none';
+            document.getElementById('guruDetailsDisplay').querySelector('.guru-timetable-table-container')?.remove();
+        }
+
+        function displayGuruData(dataType) {
+            const guruSelect = document.getElementById('guruSelect');
+            const selectedGuru = guruSelect.value;
+            const guruDetailsDisplay = document.getElementById('guruDetailsDisplay');
+            guruDetailsDisplay.innerHTML = '';
+
+            // Hide message and syllabus completion options if guru details are being displayed
+            document.getElementById('messageOptions').style.display = 'none';
+            document.getElementById('inchargeOptions').style.display = 'none';
+            document.getElementById('classTeacherOptions').style.display = 'none';
+            document.getElementById('coordinatorMessageOptions').style.display = 'none';
+            document.getElementById('syllabusCompletionOptions').style.display = 'none';
+            document.getElementById('syllabusBatchOptions').style.display = 'none';
+            
+            // Remove any existing guru timetable table
+            guruDetailsDisplay.querySelector('.guru-timetable-table-container')?.remove();
+
+            if (!selectedGuru) {
+                guruDetailsDisplay.innerHTML = '<p style="color: #d9534f; text-align: center;">Please select a Guru from the dropdown first. ⚠️</p>';
+                return;
+            }
+
+            let content = `<h4>Details for ${selectedGuru}:</h4>`;
+
+           
+if (dataType === 'biodata') {
+    const inputPassword = prompt(`Please enter the password for ${selectedGuru}'s Bio Data:`);
+    if (inputPassword === guruPasswords[selectedGuru] || inputPassword === masterAdminPassword) {
+                    // --- Gurus Bio Data Links ---
+                    const bioDataLinks = {
+                        "Ch.Gowtham": '<a href="YOUR_CH_GOWTHAM_BIO_PDF_DRIVE_LINK" target="_blank">View Ch.Gowtham\'s Bio Data (PDF) 📄</a>',
+                        "D.Vinay Karthik": '<a href="https://drive.google.com/file/d/15fIYj8Sn05fJvIFoPChtnlpvtGu-jaaF/view?usp=sharing" target="_blank">View D.Vinay Karthik\'s Bio Data (PDF) 📄</a>',
+                        "K.Shushanth": '<a href="https://drive.google.com/file/d/1gewfqtz0iN4bjJYd3Fxm_0-XQXp-4fF4/view?usp=drive_link" target="_blank">View K.Shushanth\'s Bio Data (PDF) 📄</a>',
+                        "L.Sai Varsha": '<a href="https://drive.google.com/file/d/1GKPoQQFWpS6qtdMxQSQ0WEv6lVD-kyq-/view?usp=drive_link" target="_blank">View L.Sai Varsha\'s Bio Data (PDF) 📄</a>',
+                        "P.Swapna": '<a href="https://drive.google.com/file/d/1GQtIlSsKXBD4mbux-RxVFVpUB53VdpGj/view?usp=sharing" target="_blank">View P.Swapna\'s Bio Data (PDF) 📄</a>',
+                        "V.Samitha": '<a href="https://drive.google.com/file/d/1qvaBcHro5l69h01RsJCbyU3errCmS8Bu/view?usp=drive_link" target="_blank">View V.Samitha\'s Bio Data (PDF) 📄</a>',
+                        "V.Sravani": '<a href="https://drive.google.com/file/d/1fmhmiTh4KjuYjyrS-nVIABbbcwU6o9nj/view?usp=drive_link" target="_blank">View V.Sravani\'s Bio Data (PDF) 📄</a>',
+                    };
+                    content += `<p style="margin-top:15px;">${bioDataLinks[selectedGuru] || 'Bio data link not available.'}</p>`;
+                } else {
+                    alert("Incorrect password. Access denied.");
+                    return;
+                }
+            } else if (dataType === 'schedule') {
+                // Display Guru's individual timetable as a table
+                const data = guruTimetableData[selectedGuru];
+                if (data) {
+                    let tableHtml = `<div class="guru-timetable-table-container" style="display: block;">`;
+                    tableHtml += `<h4>Individual Schedule for ${selectedGuru}</h4>`;
+                    tableHtml += '<table class="guru-timetable-table">';
+                    tableHtml += '<thead><tr>';
+                    data.headers.forEach(header => {
+                        tableHtml += `<th>${header}</th>`;
+                    });
+                    tableHtml += '</tr></thead>';
+                    tableHtml += '<tbody>';
+                    data.data.forEach(row => {
+                        tableHtml += '<tr>';
+                        row.forEach(cell => {
+                            tableHtml += `<td>${cell}</td>`;
+                        });
+                        tableHtml += '</tr>';
+                    });
+                    tableHtml += '</tbody></table></div>';
+                    guruDetailsDisplay.innerHTML = tableHtml;
+                    return;
+                } else {
+                    content += `<p style="margin-top:15px;">Schedule data for ${selectedGuru} is not available.</p>`;
+                }
+            } else if (dataType === 'responsibilities') {
+                // --- Gurus Responsibilities ---
+                const responsibilitiesText = {
+                    "Ch.Gowtham": "You have to complete all your group-2 incharge works and complete all responsibilities and works as a incharge of grp-2 and round incharge given in your schedule.<br><b>Responsibilities as a Group-2 Coordinator (Rounds at 5th hour):</b><br>Monitor that all batches follow the timetable and classes run smoothly, ensuring logbooks are properly maintained. Engage with students to clarify doubts, confirm syllabus is explained clearly, track progress, and gather suggestions from both students and teachers. Communicate feedback to all class teachers and Balvikas gurus, conduct monthly meetings for smooth coordination, and update syllabus completion status on the website with required signatures. Oversee discipline during rounds, ensure Gurus attend their assigned classes, support Group-1 exam preparations by encouraging student participation and creating a special timetable, and promptly report any disturbances in the mentors group.<br><b>Those assigned for rounds must:</b> Ensure Gurus attend classes on time. Step in if discipline issues arise. Check all batches run smoothly. Report disturbances in the mentors group.",
+                    "D.Vinay Karthik": "You have to complete all your gurus coordinator works and complete all responsibilities and works as a class teacher and round incharge given in your schedule.<br><b>Gurus Coordinator Responsibilities (Rounds at 2nd hour):</b><br>Ensure all Gurus attend their scheduled classes on time and complete topics effectively. Keep a log of what each Guru teaches and verify that data is entered properly. Share updates about meetings or special programs with them. Monitor their discipline in class—no unnecessary talking—and collect their weekly attendance and bio-data.<br><b>Class Teacher Responsibilities:</b><br>Track syllabus completion by getting updates and signatures from subject teachers. Remind them to finish on time. Record attendance daily in the register and update the Balvikas logbook with signatures. Ensure discipline in class, respond to in-charge messages, interact with students regularly, and monitor classrooms during the 5th-hour rounds.<br><b>Those assigned for rounds must:</b> Ensure Gurus attend classes on time. Step in if discipline issues arise. Check all batches run smoothly. Report disturbances in the mentors group.",
+                    "K.Shushanth": "You have to complete all your media works and complete all responsibilities and works as a discipline coordinator and round incharge given in your schedule.<br><b>Responsibilities as a Media and Discipline Coordinator:</b><br>As the Discipline Coordinator, ensure students place their footwear properly before 9 AM, maintain discipline and silence in classrooms, and create a calm Balvikas environment. Visit all classes regularly and inspect batches during your free time. As the Media Coordinator, ensure all Balvikas students are in the official WhatsApp group, update new joiners in the report book, add them to the group, and share batch-wise weekly photos in the mentors group.",
+                    "L.Sai Varsha": "You have to complete all your mentoring works and complete all responsibilities and works as a class teacher and round incharge given in your schedule.<br><b>Mentoring Coordinator Responsibilities (Rounds at 4th hour):</b><br>Ensure all in-charges and class teachers make monthly calls to parents. Maintain a proper record of each conversation and track follow-ups if needed.<br><b>Class Teacher Responsibilities:</b><br>Track syllabus completion by getting updates and signatures from subject teachers. Remind them to finish on time. Record attendance daily in the register and update the Balvikas logbook with signatures. Ensure discipline in class, respond to in-charge messages, interact with students regularly, and monitor classrooms during the 5th-hour rounds.<br><b>Those assigned for rounds must:</b> Ensure Gurus attend classes on time. Step in if discipline issues arise. Check all batches run smoothly. Report disturbances in the mentors group.",
+                    "P.Swapna": "You have to complete all your Cultural coordinator works and complete all responsibilities and works as a class teacher and round incharge given in your schedule.<br><b>Responsibilities as a Cultural Coordinator (Rounds at 3rd hour):</b><br>Plan and discuss upcoming cultural programs in advance. Organize dances and other performances, coordinate with the team, make timely arrangements, and prepare a schedule for practice. Ensure smooth execution through planning and teamwork.<br><b>Class Teacher Responsibilities:</b><br>Track syllabus completion by getting updates and signatures from subject teachers. Remind them to finish on time. Record attendance daily in the register and update the Balvikas logbook with signatures. Ensure discipline in class, respond to in-charge messages, interact with students regularly, and monitor classrooms during the 5th-hour rounds.<br><b>Those assigned for rounds must:</b> Ensure Gurus attend classes on time. Step in if discipline issues arise. Check all batches run smoothly. Report disturbances in the mentors group.",
+                    "V.Samitha": "You have to complete all your group-1 coordinator and complete all responsibilities and works as a grp-1 incharge and round incharge given in your schedule <br><b>Responsibilities as a Group-1 Coordinator (Rounds at 5th hour):</b> <br>Monitor that all batches follow the timetable and classes run smoothly, ensuring logbooks are properly maintained. Engage with students to clarify doubts, confirm syllabus is explained clearly, track progress, and gather suggestions from both students and teachers. Communicate feedback to all class teachers and Balvikas gurus, conduct monthly meetings for smooth coordination, and update syllabus completion status on the website with required signatures. Oversee discipline during rounds, ensure Gurus attend their assigned classes, support Group-1 exam preparations by encouraging student participation and creating a special timetable, and promptly report any disturbances in the mentors group.<br><b>Those assigned for rounds must Ensure Gurus attend classes on time. Step in if discipline issues arise. Check all batches run smoothly. Report disturbances in the mentors group.</b> ",
+                    "V.Sravani": "You have to complete all your register works and complete all responsibilities and works as a class teacher and round incharge given in your schedule.<br><b>Register Coordinator Responsibilities:</b><br>Collect missing student information from teachers or students. Confirm regularity of new students with Media and Group-1 coordinators. Provide forms, ensure correct data is recorded, and remind students if details are missing.<br><b>Class Teacher Responsibilities:</b><br>Track syllabus completion by getting updates and signatures from subject teachers. Remind them to finish on time. Record attendance daily in the register and update the Balvikas logbook with signatures. Ensure discipline in class, respond to in-charge messages, interact with students regularly, and monitor classrooms during the 5th-hour rounds.<br><b>Those assigned for rounds must:</b> Ensure Gurus attend classes on time. Step in if discipline issues arise. Check all batches run smoothly. Report disturbances in the mentors group.",
+                };
+                content += `<p style="margin-top:15px;">${responsibilitiesText[selectedGuru] || 'Responsibilities not specified.'}</p>`;
+            } else if (dataType === 'materials') {
+                // --- Gurus Materials Needed ---
+                const materialsLinks = {
+                    "Ch.Gowtham": `
+                        <ul class="materials-list">
+                            <li><a href="https://drive.google.com/file/d/1VC9uFy4LO_ALPYTE6C6XWcxImf3BbTif/view?usp=drive_link" target="_blank">GROUP-1 full TEXT book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VCjEEmlLe4x2vzFhMY9DP8T_Nz0o5WV_/view?usp=drive_link" target="_blank">Group-2 Full Text Book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VMNs3JQ1P5ai3hK6SqbtDi2OLWi4ULnr/view?usp=drive_link" target="_blank">Group-1 Full Text Book with explanation PDF</a></li>
+                        </ul>`,
+                    "D.Vinay Karthik": `
+                        <ul class="materials-list">
+                            <li><a href="https://drive.google.com/file/d/1VC9uFy4LO_ALPYTE6C6XWcxImf3BbTif/view?usp=drive_link" target="_blank">GROUP-1 full TEXT book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VCjEEmlLe4x2vzFhMY9DP8T_Nz0o5WV_/view?usp=drive_link" target="_blank">Group-2 Full Text Book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VMNs3JQ1P5ai3hK6SqbtDi2OLWi4ULnr/view?usp=drive_link" target="_blank">Group-1 Full Text Book with explanation PDF</a></li>
+<li><a href="https://drive.google.com/file/d/1Umc9D1MO6118SF0hyuMGDNc2Xilt1_7I/view?usp=drive_link" target="_blank">Bhajans material Group-2(B)</a></li>
+<li><a href="https://drive.google.com/file/d/1UtuoCg3l7MIJLSHnh6WMPR7xM2LazFNH/view?usp=drive_link" target="_blank">Stories Group-1 Material</a></li>
+<li><a href="https://drive.google.com/file/d/1UD7mCXJmYbMTEWErh1a5DyN8KSDnauDZ/view?usp=drive_link" target="_blank">God and goddess material for kids</a></li>
+
+
+                        </ul>`,
+                    "K.Shushanth": `
+                        <ul class="materials-list">
+                            <li><a href="https://drive.google.com/file/d/1VC9uFy4LO_ALPYTE6C6XWcxImf3BbTif/view?usp=drive_link" target="_blank">GROUP-1 full TEXT book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VCjEEmlLe4x2vzFhMY9DP8T_Nz0o5WV_/view?usp=drive_link" target="_blank">Group-2 Full Text Book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VMNs3JQ1P5ai3hK6SqbtDi2OLWi4ULnr/view?usp=drive_link" target="_blank">Group-1 Full Text Book with explanation PDF</a></li>
+<li><a href="https://drive.google.com/file/d/1UrXBczCfHal_y4hd6SkdehD2kaiWbi7f/view?usp=drive_link" target="_blank">Sri satya sai Ashtotra material Group-2(B)</a></li>
+                  <li><a href="https://drive.google.com/file/d/1UrwZe1EUPu8Vco7HASuME07p0Rr9E7e1/view?usp=drive_link" target="_blank">Swami Balyam full explanation materail Group-2(B)</a></li>
+                  <li><a href="https://drive.google.com/file/d/1Uq2qHzH9Re7WIGqEyhLNrcX_7CFs9Wyc/view?usp=drive_link" target="_blank">Swami Balyam full gunshot pointsGroup-2(B)</a></li>
+ <li><a href="https://drive.google.com/file/d/1UZqUnM_m_HtZ2D7yRT1Og-N3xKVr5Y0C/view?usp=drive_link" target="_blank">Sai Stories Material for kids</a></li>
+<li><a href="https://drive.google.com/file/d/1Ys0yWAWnE4g6XxRC26UHW3ywcttGpqML/view?usp=drive_link" target="_blank">Extra Curricular Group-1 material</a></li>
+
+                        </ul>`,
+                    "L.Sai Varsha": `
+                        <ul class="materials-list">
+                            <li><a href="https://drive.google.com/file/d/1VC9uFy4LO_ALPYTE6C6XWcxImf3BbTif/view?usp=drive_link" target="_blank">GROUP-1 full TEXT book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VCjEEmlLe4x2vzFhMY9DP8T_Nz0o5WV_/view?usp=drive_link" target="_blank">Group-2 Full Text Book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VMNs3JQ1P5ai3hK6SqbtDi2OLWi4ULnr/view?usp=drive_link" target="_blank">Group-1 Full Text Book with explanation PDF</a></li>
+<li><a href="https://drive.google.com/file/d/1URFNP5KJCy2wicZ1XMBpX2JPguHEWqBP/view?usp=drive_link" target="_blank">Tiny Tunes For sai material for kids</a></li>
+<li><a href="https://drive.google.com/file/d/1UvGO0WJYuZFViYrtN6k_N5GOWHM2-vC4/view?usp=drive_link" target="_blank">Vakya Vibhuthi And manners Group-1 Material</a></li>
+
+
+                        </ul>`,
+                    "P.Swapna": `
+                        <ul class="materials-list">
+                           <li><a href="https://drive.google.com/file/d/1VC9uFy4LO_ALPYTE6C6XWcxImf3BbTif/view?usp=drive_link" target="_blank">GROUP-1 full TEXT book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VCjEEmlLe4x2vzFhMY9DP8T_Nz0o5WV_/view?usp=drive_link" target="_blank">Group-2 Full Text Book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VMNs3JQ1P5ai3hK6SqbtDi2OLWi4ULnr/view?usp=drive_link" target="_blank">Group-1 Full Text Book with explanation PDF</a></li>
+<li><a href="https://drive.google.com/file/d/1Uia4X_PDkCSFqSQ3TTqeMPnQXyNENl9r/view?usp=drive_link" target="_blank">Bhaja Govindam & Prayers Material Group-2(B)</a></li>
+<li><a href="https://drive.google.com/file/d/1UhKey_eTJh9yhCiQvPV82RxEq8Q8V3lZ/view?usp=drive_link" target="_blank">Extra Curricular Group-2(A) material</a></li>
+<li><a href="https://drive.google.com/file/d/1UGqS_FOiahOdcwYVc-XwvQGl66lmqJMN/view?usp=drive_link" target="_blank">Extra Curricular Material for kids</a></li>
+<li><a href="https://drive.google.com/file/d/1Y_w9k47fXwwglP71IItiG0f04vO2IkFJ/view?usp=drive_linkk" target="_blank">BHAJANS Group-1 Material</a></li>
+<li><a href="https://drive.google.com/file/d/1Yxj9o42DpEkpSpfVNlxRjMM7X1PYIYsu/view?usp=drive_link" target="_blank">Pranteeya Geethalu Group-1 Material</a></li>
+<li><a href="https://drive.google.com/file/d/1dU1W1JdY6cCHFIE8rbqYGFvmlP45aLS1/view?usp=sharing" target="_blank">Baba Sayings Group-2(A) Material</a></li>
+                        </ul>`,
+                    "V.Samitha": `
+                        <ul class="materials-list">
+                            <li><a href="https://drive.google.com/file/d/1VC9uFy4LO_ALPYTE6C6XWcxImf3BbTif/view?usp=drive_link" target="_blank">GROUP-1 full TEXT book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VCjEEmlLe4x2vzFhMY9DP8T_Nz0o5WV_/view?usp=drive_link" target="_blank">Group-2 Full Text Book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VMNs3JQ1P5ai3hK6SqbtDi2OLWi4ULnr/view?usp=drive_link" target="_blank">Group-1 Full Text Book with explanation PDF</a></li>
+<li><a href="https://drive.google.com/file/d/1UQvSSIumQTy8GB_V7V8GRMhUL15lnhnh/view?usp=drive_link" target="_blank">Divine Alphabets material for kids</a></li>
+<li><a href="https://drive.google.com/file/d/1UiIzfZI8rv_Q8-gWdyGUaKUBTMHuMSue/view?usp=drive_link" target="_blank">Extra curricular & Baba Sayings material Group-2(B)</a></li>
+                <li><a href="https://drive.google.com/file/d/1Yc1foCGJjd7uwAj8jEahR5vr0QwDRLYb/view?usp=drive_link" target="_blank">Shlokas & Suprabatham  Group-1 Material</a></li>               
+<li><a href="https://drive.google.com/file/d/1Yv_qxiv-l2laR_Yh_2nRjJ6KUsnix3b3/view?usp=drive_link" target="_blank">Festivals and balabalikalaku teiliyaparachu vishayalu</a></li>
+
+
+                        </ul>`,
+                    "V.Sravani": `
+                        <ul class="materials-list">
+                            <li><a href="https://drive.google.com/file/d/1VC9uFy4LO_ALPYTE6C6XWcxImf3BbTif/view?usp=drive_link" target="_blank">GROUP-1 full TEXT book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VCjEEmlLe4x2vzFhMY9DP8T_Nz0o5WV_/view?usp=drive_link" target="_blank">Group-2 Full Text Book PDF</a></li>
+                            <li><a href="https://drive.google.com/file/d/1VMNs3JQ1P5ai3hK6SqbtDi2OLWi4ULnr/view?usp=drive_link" target="_blank">Group-1 Full Text Book with explanation PDF</a></li>
+<li><a href="https://drive.google.com/file/d/1UjZqSX2aMLO4vMEXLFVo8tVg5QV3eyoO/view?usp=drive_link" target="_blank">vakya vibhuthi material Group-2(B)</a></li>
+<li><a href="https://drive.google.com/file/d/1UVi5MUcXlsbtucYTq3_At0rPxGp9_rbS/view?usp=drive_link" target="_blank">Chanting Prayers Material for kids</a></li>
+ <li><a href="https://drive.google.com/file/d/1UhI893_uE0QjVVcyrcjBPIRFtR-I2szq/view?usp=drive_link" target="_blank">Bhajans Group-2(A) material</a></li>
+                        </ul>`,
+                };
+                content += materialsLinks[selectedGuru] || '<p>No specific materials listed.</p>';
+            }
+            guruDetailsDisplay.innerHTML = content;
+        }
+
+        // --- Message Admin Feature Logic ---
+        function toggleMessageOptions() {
+            const messageOptions = document.getElementById('messageOptions');
+            const syllabusCompletionOptions = document.getElementById('syllabusCompletionOptions');
+
+            messageOptions.style.display = messageOptions.style.display === 'block' ? 'none' : 'block';
+            syllabusCompletionOptions.style.display = 'none';
+
+            document.getElementById('guruDetailsDisplay').innerHTML = '';
+            // Hide all sub-options when the main message button is toggled
+            document.getElementById('inchargeOptions').style.display = 'none';
+            document.getElementById('classTeacherOptions').style.display = 'none';
+            document.getElementById('coordinatorMessageOptions').style.display = 'none';
+            document.getElementById('syllabusBatchOptions').style.display = 'none';
+        }
+
+        function toggleSubOptions(optionsId) {
+            const element = document.getElementById(optionsId);
+            element.style.display = element.style.display === 'flex' ? 'none' : 'flex';
+            
+            // Hide other sub-options if they are open
+            if (optionsId === 'inchargeOptions') {
+                document.getElementById('classTeacherOptions').style.display = 'none';
+                document.getElementById('coordinatorMessageOptions').style.display = 'none';
+            } else if (optionsId === 'classTeacherOptions') {
+                document.getElementById('inchargeOptions').style.display = 'none';
+                document.getElementById('coordinatorMessageOptions').style.display = 'none';
+            } else if (optionsId === 'coordinatorMessageOptions') {
+                document.getElementById('inchargeOptions').style.display = 'none';
+                document.getElementById('classTeacherOptions').style.display = 'none';
+            }
+        }
+
+        function openMailLink(recipientType) {
+            const email = contactEmails[recipientType];
+            if (email && email !== `${recipientType}.email@example.com`) {
+                const subject = encodeURIComponent(`Message from Balvikas Guru - ${userName}`);
+                const body = encodeURIComponent(`Dear ${recipientType.replace(/(\d)/, ' $1')},\n\nI am writing to you regarding...\n\nSincerely,\n${userName}\nSri Satya Sai Balvikas Center`);
+                window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+            } else {
+                alert(`Email address for ${recipientType.replace(/(\d)/, ' $1')} is not set. Please inform the administrator.`);
+            }
+        }
+
+        // --- Timetable Display Logic ---
+        function toggleTimetable(batchId) {
+            const timetableContainer = document.getElementById(`${batchId}Timetable`);
+            const syllabusContainer = document.getElementById(`${batchId}Syllabus`);
+            const materialsContent = document.getElementById(`${batchId}Materials`);
+
+            // Hide syllabus and materials content if they are open
+            if (syllabusContainer && syllabusContainer.style.display === 'block') {
+                syllabusContainer.style.display = 'none';
+            }
+            if (materialsContent && materialsContent.style.display === 'block') {
+                materialsContent.style.display = 'none';
+            }
+
+            // Toggle the timetable table
+            if (timetableContainer.style.display === 'block') {
+                timetableContainer.style.display = 'none';
+            } else {
+                displayTimetableTable(batchId);
+                timetableContainer.style.display = 'block';
+            }
+        }
+
+        function displayTimetableTable(batchId) {
+            const container = document.getElementById(`${batchId}Timetable`);
+            const data = timetableData[batchId];
+
+            if (!data) {
+                container.innerHTML = `<p>Timetable data for ${batchId.replace(/([A-Z])/g, ' $1').replace('Batch', ' Batch')} is not available.</p>`;
+                return;
+            }
+
+            let tableHtml = `<h4>${batchId.replace(/([A-Z])/g, ' $1').replace('Batch', ' Batch')} Timetable</h4>`;
+            tableHtml += '<table class="timetable-table">';
+            tableHtml += '<thead><tr>';
+            data.headers.forEach(header => {
+                tableHtml += `<th>${header}</th>`;
+            });
+            tableHtml += '</tr></thead>';
+            tableHtml += '<tbody>';
+            data.data.forEach(row => {
+                tableHtml += '<tr>';
+                row.forEach(cell => {
+                    tableHtml += `<td>${cell}</td>`;
+                });
+                tableHtml += '</tr>';
+            });
+            tableHtml += '</tbody></table>';
+            container.innerHTML = tableHtml;
+        }
+
+        // --- Syllabus Display Logic ---
+        function toggleSyllabus(batchId) {
+            const syllabusContainer = document.getElementById(`${batchId}Syllabus`);
+            const timetableContainer = document.getElementById(`${batchId}Timetable`);
+            const materialsContent = document.getElementById(`${batchId}Materials`);
+
+            // Hide timetable and materials content if they are open
+            if (timetableContainer && timetableContainer.style.display === 'block') {
+                timetableContainer.style.display = 'none';
+            }
+            if (materialsContent && materialsContent.style.display === 'block') {
+                materialsContent.style.display = 'none';
+            }
+
+            // Toggle the syllabus table
+            if (syllabusContainer.style.display === 'block') {
+                syllabusContainer.style.display = 'none';
+            } else {
+                displaySyllabusTable(batchId);
+                syllabusContainer.style.display = 'block';
+            }
+        }
+
+        function displaySyllabusTable(batchId) {
+            const container = document.getElementById(`${batchId}Syllabus`);
+            const data = syllabusData[batchId];
+
+            if (!data) {
+                container.innerHTML = `<p>Syllabus data for ${batchId.replace(/([A-Z])/g, ' $1').replace('Batch', ' Batch')} is not available.</p>`;
+                return;
+            }
+
+            let tableHtml = `<h4>${batchId.replace(/([A-Z])/g, ' $1').replace('Batch', ' Batch')} Syllabus</h4>`;
+            tableHtml += '<table class="syllabus-table">';
+            tableHtml += '<thead><tr>';
+            data.headers.forEach(header => {
+                tableHtml += `<th>${header}</th>`;
+            });
+            tableHtml += '</tr></thead>';
+            tableHtml += '<tbody>';
+            data.data.forEach(row => {
+                tableHtml += '<tr>';
+                row.forEach(cell => {
+                    tableHtml += `<td>${cell}</td>`;
+                });
+                tableHtml += '</tr>';
+            });
+            tableHtml += '</tbody></table>';
+            container.innerHTML = tableHtml;
+        }
+
+        // --- Learning Materials Toggle Logic ---
+        function toggleMaterials(batchId) {
+            const materialsContent = document.getElementById(`${batchId}Materials`);
+            const timetableContainer = document.getElementById(`${batchId}Timetable`);
+            const syllabusContainer = document.getElementById(`${batchId}Syllabus`);
+
+            // Hide timetable and syllabus if they are open
+            if (timetableContainer && timetableContainer.style.display === 'block') {
+                timetableContainer.style.display = 'none';
+            }
+            if (syllabusContainer && syllabusContainer.style.display === 'block') {
+                syllabusContainer.style.display = 'none';
+            }
+
+            // Toggle the materials content
+            materialsContent.style.display = materialsContent.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // --- Syllabus Completion Logic for Gurus ---
+        function toggleSyllabusCompletionOptions() {
+            const syllabusCompletionOptions = document.getElementById('syllabusCompletionOptions');
+            const messageOptions = document.getElementById('messageOptions');
+
+            syllabusCompletionOptions.style.display = syllabusCompletionOptions.style.display === 'block' ? 'none' : 'block';
+            messageOptions.style.display = 'none';
+
+            document.getElementById('guruDetailsDisplay').innerHTML = '';
+            // Hide all message sub-options
+            document.getElementById('inchargeOptions').style.display = 'none';
+            document.getElementById('classTeacherOptions').style.display = 'none';
+            document.getElementById('coordinatorMessageOptions').style.display = 'none';
+            
+            // Toggle syllabus batch sub-options
+            const syllabusBatchOptions = document.getElementById('syllabusBatchOptions');
+            syllabusBatchOptions.style.display = syllabusCompletionOptions.style.display === 'block' ? 'flex' : 'none';
+        }
+
+        function openSyllabusCompletion(batchKey) {
+            const link = syllabusCompletionLinks[batchKey];
+            if (link && link !== `YOUR_${batchKey.toUpperCase()}_SYLLABUS_COMPLETION_EXCEL_LINK`) {
+                window.open(link, '_blank');
+            } else {
+                alert(`Syllabus completion link for ${batchKey.replace(/([A-Z])/g, ' $1')} is not set. Please inform the administrator.`);
+            }
+        }
+
+function toggleReferences(batchId) {
+    const refDiv = document.getElementById(`${batchId}References`);
+    refDiv.style.display = refDiv.style.display === 'block' ? 'none' : 'block';
+}
+
+function toggleTopics(topicId) {
+    const list = document.getElementById(topicId);
+    list.style.display = list.style.display === 'block' ? 'none' : 'block';
+}
+
+function alertKidsMessage() {
+  alert("Sairam dear Guru 🙏\nThe resource for the Kids Batch is already given in the Learning Materials section.\nYou can find the required resources there.\n If You want the Audios please Write A Mail to the  Admin mail \n sssbalvikas.agp@gmail.com from the gurus portal.\n Thanks and regards \n Sai Varsha(Class Teacher Kids Batch)\n Samitha (Incharge - Group-1)\n  Sairam");
+}
+
+function toggleReferences(id) {
+    const ref = document.getElementById(id);
+    ref.style.display = ref.style.display === 'none' ? 'block' : 'none';
+  }
+        // Initial setup for the page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hide all containers initially except for the homePage
+            document.querySelectorAll('.container').forEach(container => {
+                container.style.display = 'none';
+            });
+            document.getElementById('homePage').style.display = 'flex';
+
+            // Also hide all specific content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            // And ensure timetable/syllabus/materials containers are hidden
+            document.querySelectorAll('.timetable-table-container, .syllabus-table-container, .materials-content, .guru-timetable-table-container').forEach(tableContainer => {
+                tableContainer.style.display = 'none';
+            });
+        });
+ 
+    document.getElementById("viewSchedulesBtn").addEventListener("click", function (e) {
+        e.preventDefault(); // Always block default
+
+        // Make sure to apply the previous fix here as well, if you haven't already:
+        // if (accessGranted) { return; }
+        // accessGranted = true; // Set this before prompt if you want to prevent double prompts on single click
+
+        let name = prompt("Enter your name:");
+        let trimmedName = name ? name.trim() : ""; // Handle null/empty name gracefully
+        let lowercasedTrimmedName = trimmedName.toLowerCase();
+
+        // Updated condition: must end with '108' AND start with 's', 'v', or 'g' (case-insensitive)
+        if (trimmedName.endsWith("108") && 
+            (lowercasedTrimmedName.startsWith("s") || 
+             lowercasedTrimmedName.startsWith("v") || 
+             lowercasedTrimmedName.startsWith("g"))) {
+            
+            accessGranted = true; // grant access permanently once
+            document.getElementById("homePage").style.display = "none";
+            document.getElementById("mainDashboard").style.display = "flex";
+            document.getElementById("userNameDisplay").innerText = `SAIRAM, ${name}! 🙏`;
+        } else {
+            // 💥 keep user on homepage
+            // Update the alert message to reflect the new condition
+            alert("Sairam Access Denied ❌. ");
+            // If you applied the double-prompt fix, you might need to reset accessGranted here:
+            // accessGranted = false; 
+            document.getElementById("homePage").style.display = "flex";
+            document.getElementById("mainDashboard").style.display = "none";
+        }
+    });
+
+   		
+    </script>
+</body>
+</html>
